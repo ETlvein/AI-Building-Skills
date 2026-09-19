@@ -1,10 +1,14 @@
 # AI-Building-Skills Changelog
 
-## [Unreleased]
+## [1.0.0] - 2026-09-19
 
 Status:
 
-DRAFT
+FROZEN
+
+Owner Approval:
+
+APPROVED
 
 ### Added
 

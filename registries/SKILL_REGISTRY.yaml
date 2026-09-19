@@ -3,7 +3,7 @@ schema_version: 1
 registry:
   id: SKILL_REGISTRY
   repository: AI-Building-Skills
-  status: DRAFT
+  status: FROZEN
   purpose: "Permanent version-aware registry for independently governed public GLOBAL and DOMAIN Skills."
 
 governance:

@@ -3,7 +3,7 @@ schema_version: 1
 registry:
   id: REFERENCE_REGISTRY
   repository: AI-Building-Skills
-  status: DRAFT
+  status: FROZEN
   purpose: "Central registry for reusable public technical references used by Skills and AI planning."
 
 governance:

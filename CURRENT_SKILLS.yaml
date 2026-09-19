@@ -5,7 +5,7 @@ repository:
   local_authoring_source: "D:\\AI Building_Skills"
   published_source: "https://github.com/ETlvein/AI-Building-Skills"
   visibility: PUBLIC
-  status: DRAFT
+  status: FROZEN
 
 governance:
   prompt_standard_repository: "https://github.com/ETlvein/AI-Building-PromptStandard"
@@ -91,5 +91,14 @@ publication:
   git_role: PUBLISHED_SOURCE
   publication_required: true
   rule: "A Skill is not published until required validation, Git commit, and Git push succeed."
+
+freeze:
+  baseline_version: "1.0.0"
+  baseline_tag: "v1.0.0"
+  status: FROZEN
+  owner_approval: APPROVED
+  approval_date: "2026-09-19"
+  approved_baseline_source_commit: "e5f8d94006b06e1dcf4ff374fbaad7e0c93ecbfa"
+  rule: "Changes to frozen governance require a new governed version and must not silently rewrite this baseline."
 
 updated_date: "2026-09-19"

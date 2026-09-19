@@ -391,7 +391,7 @@ AI-Building-Skills
 
 Repository Status:
 
-DRAFT
+FROZEN
 
 Current public Skills:
 
@@ -401,7 +401,11 @@ Current public References:
 
 0
 
-Skill governance infrastructure is being established before the first formal reusable Skill is admitted.
+Skill Governance Baseline: V1.0 / FROZEN / OWNER APPROVED
+
+Freeze Date: 2026-09-19
+
+The governance baseline was frozen before the first formal reusable Skill admission cycle.
 
 ---
 

@@ -3,7 +3,7 @@ schema_version: 1
 registry:
   id: SKILL_COMPATIBILITY_REGISTRY
   repository: AI-Building-Skills
-  status: DRAFT
+  status: FROZEN
   purpose: "Central compatibility and conflict registry controlling whether Skills may be composed in the same execution context."
 
 governance:

@@ -3,7 +3,7 @@ schema_version: 1
 registry:
   id: SKILL_SOURCE_REGISTRY
   repository: AI-Building-Skills
-  status: DRAFT
+  status: FROZEN
   purpose: "Permanent registry for external Skill discovery sources, discovery history, version tracking, import decisions, and update checks."
 
 governance:
