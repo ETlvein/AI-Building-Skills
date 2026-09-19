@@ -1,0 +1,225 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ETlvein/AI-Building-Skills/schemas/SKILL_MANIFEST.schema.json",
+  "title": "AI-Building Skill Manifest",
+  "description": "Schema for reusable public GLOBAL and DOMAIN Skill manifests.",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "schema_version",
+    "skill",
+    "governance",
+    "classification",
+    "resolution",
+    "dependencies",
+    "compatibility",
+    "publication",
+    "updated_date"
+  ],
+
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "version",
+        "scope",
+        "status",
+        "path",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "GLOBAL",
+            "DOMAIN"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "DRAFT",
+            "ACTIVE",
+            "DEPRECATED"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt_standard_repository",
+        "prompt_standard_ref",
+        "prompt_standard_id"
+      ],
+      "properties": {
+        "prompt_standard_repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prompt_standard_ref": {
+          "type": "string",
+          "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "prompt_standard_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain",
+        "tags"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registry_discoverable",
+        "load_policy"
+      ],
+      "properties": {
+        "registry_discoverable": {
+          "type": "boolean"
+        },
+        "load_policy": {
+          "type": "string",
+          "enum": [
+            "ON_DEMAND"
+          ]
+        }
+      }
+    },
+
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tools",
+        "references",
+        "skills"
+      ],
+      "properties": {
+        "tools": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "references": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "skills": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environments",
+        "minimum_prompt_standard"
+      ],
+      "properties": {
+        "environments": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "minimum_prompt_standard": {
+          "type": "string",
+          "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"
+        }
+      }
+    },
+
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "public_safe",
+        "published"
+      ],
+      "properties": {
+        "public_safe": {
+          "type": "boolean"
+        },
+        "published": {
+          "type": "boolean"
+        }
+      }
+    },
+
+    "updated_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}

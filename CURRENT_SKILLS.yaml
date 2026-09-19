@@ -1,0 +1,43 @@
+﻿schema_version: 1
+
+repository:
+  name: AI-Building-Skills
+  local_authoring_source: "D:\\AI Building_Skills"
+  published_source: "https://github.com/ETlvein/AI-Building-Skills"
+  visibility: PUBLIC
+  status: DRAFT
+
+governance:
+  prompt_standard_repository: "https://github.com/ETlvein/AI-Building-PromptStandard"
+  prompt_standard_ref: "v1.0.0"
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+  rule: "Skill governance must comply with the locked Prompt Standard reference."
+
+registry:
+  path: registries/SKILL_REGISTRY.yaml
+
+skill_storage:
+  global_root: skills/global
+  domain_root: skills/domain
+  project_skill_policy: LOCAL_OR_PRIVATE_REPOSITORY
+
+public_repository_policy:
+  allowed_skill_scopes:
+    - GLOBAL
+    - DOMAIN
+  prohibit_sensitive_project_skills: true
+  prohibit_credentials: true
+  prohibit_private_data: true
+  prohibit_unauthorized_business_secrets: true
+
+resolution:
+  mode: REGISTRY_FIRST
+  rule: "Discover skills through the registry before loading individual skill content."
+
+publication:
+  local_role: AUTHORING_SOURCE
+  git_role: PUBLISHED_SOURCE
+  publication_required: true
+  rule: "A Skill is not published until required validation, Git commit, and Git push succeed."
+
+updated_date: "2026-09-19"

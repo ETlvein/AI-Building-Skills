@@ -1,0 +1,22 @@
+﻿schema_version: 1
+
+registry:
+  id: SKILL_REGISTRY
+  repository: AI-Building-Skills
+  status: DRAFT
+  purpose: "Central registry for reusable public GLOBAL and DOMAIN Skills."
+
+governance:
+  prompt_standard_repository: "https://github.com/ETlvein/AI-Building-PromptStandard"
+  prompt_standard_ref: "v1.0.0"
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+
+discovery:
+  mode: REGISTRY_FIRST
+  allowed_public_scopes:
+    - GLOBAL
+    - DOMAIN
+
+skills: []
+
+updated_date: "2026-09-19"
