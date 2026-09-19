@@ -18,6 +18,14 @@ classification:
   domain: ""
   tags: []
 
+source:
+  source_id: ""
+  source_type: ""
+  source_url: ""
+  external_identifier: ""
+  external_version_or_commit: ""
+  content_hash: ""
+
 resolution:
   registry_discoverable: true
   load_policy: ON_DEMAND
@@ -26,6 +34,25 @@ dependencies:
   tools: []
   references: []
   skills: []
+
+composition:
+  mode: COMPOSABLE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
 
 compatibility:
   environments: []

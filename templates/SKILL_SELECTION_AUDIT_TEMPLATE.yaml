@@ -1,0 +1,144 @@
+﻿schema_version: 1
+
+audit:
+  audit_id: ""
+  project_id: ""
+  task_id: ""
+  created_at: ""
+  status: IN_PROGRESS
+
+governance:
+  prompt_standard_ref: "v1.0.0"
+  discovery_protocol: protocols/SKILL_DISCOVERY_SELECTION_PROTOCOL.md
+  skill_registry: registries/SKILL_REGISTRY.yaml
+  source_registry: registries/SKILL_SOURCE_REGISTRY.yaml
+  compatibility_registry: registries/SKILL_COMPATIBILITY_REGISTRY.yaml
+
+task_profile:
+  objective: ""
+  domain: []
+  environment: []
+  tools: []
+  project_constraints: []
+  file_mutation_scope: []
+  required_outputs: []
+  safety_constraints: []
+
+online_discovery:
+  required: true
+  completed: false
+  searched_at: ""
+  search_scope: []
+  sources_checked: []
+  candidates_found: []
+
+local_discovery:
+  required: true
+  completed: false
+  candidates_found: []
+
+external_local_comparison:
+  completed: false
+
+  comparisons: []
+
+  classifications:
+    same_identity: []
+    same_version: []
+    newer_version: []
+    similar: []
+    alternative: []
+    new_skill: []
+    conflicting: []
+
+source_reviews: []
+
+candidate_set:
+  candidates: []
+
+compatibility_evaluation:
+  required_for_multi_skill: true
+  completed: false
+
+  required_dimensions:
+    - INPUT_CONTRACT
+    - OUTPUT_CONTRACT
+    - TOOL_REQUIREMENTS
+    - FILE_MUTATION_SCOPE
+    - EXECUTION_ORDER
+    - TECHNOLOGY_STACK
+    - VERSION_REQUIREMENTS
+    - PERMISSION_REQUIREMENTS
+    - SECURITY_RULES
+    - PROJECT_GOVERNANCE
+    - GIT_WORKFLOW
+    - DEPENDENCY_REQUIREMENTS
+
+  pairwise_results: []
+
+  unresolved_conflicts: []
+  unknown_relations: []
+
+composition_gate:
+  gate: SKILL_COMPOSITION_GATE
+  status: NOT_EVALUATED
+
+  required_conditions:
+    online_discovery_completed: false
+    local_discovery_completed: false
+    external_local_comparison_completed: false
+    required_source_reviews_completed: false
+    dependencies_resolved: false
+    exclusive_groups_resolved: false
+    pairwise_compatibility_evaluated: false
+    no_conflicts: false
+    no_unknown_compatibility: false
+    skill_identities_preserved: false
+    project_governance_satisfied: false
+
+  pass_result: ALLOW_EXECUTION_BLOCK
+  fail_result: BLOCK_EXECUTION_BLOCK
+
+final_skill_set:
+  status: NOT_SELECTED
+  skills: []
+
+  required_skill_fields:
+    - skill_id
+    - exact_version
+    - reason_selected
+    - source_status
+    - compatibility_status
+    - dependencies
+    - constraints
+
+rejected_candidates: []
+
+no_skill_result:
+  allowed: true
+  result_code: NO_APPLICABLE_SKILL
+  reason: ""
+
+retention_assertions:
+  existing_skills_deleted: false
+  skills_merged: false
+  historical_versions_overwritten: false
+  skill_identity_changed: false
+
+execution_authorization:
+  agent_may_use_only_final_skill_set: true
+  agent_may_add_unapproved_skill: false
+
+evidence:
+  online_search_evidence: []
+  local_registry_evidence: []
+  source_review_evidence: []
+  comparison_evidence: []
+  compatibility_evidence: []
+  final_selection_evidence: []
+
+final_result:
+  result: NOT_EVALUATED
+  reason: ""
+
+updated_at: ""

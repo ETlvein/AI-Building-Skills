@@ -4,7 +4,7 @@ registry:
   id: SKILL_REGISTRY
   repository: AI-Building-Skills
   status: DRAFT
-  purpose: "Central registry for reusable public GLOBAL and DOMAIN Skills."
+  purpose: "Permanent version-aware registry for independently governed public GLOBAL and DOMAIN Skills."
 
 governance:
   prompt_standard_repository: "https://github.com/ETlvein/AI-Building-PromptStandard"
@@ -12,10 +12,83 @@ governance:
   prompt_standard_id: PROMPT_STANDARD_V1.0
 
 discovery:
-  mode: REGISTRY_FIRST
-  allowed_public_scopes:
-    - GLOBAL
-    - DOMAIN
+  mode: REGISTRY_FIRST_FOR_LOCAL_INVENTORY
+  online_discovery_required_before_final_selection: true
+  source_registry: registries/SKILL_SOURCE_REGISTRY.yaml
+  compatibility_registry: registries/SKILL_COMPATIBILITY_REGISTRY.yaml
+
+allowed_public_scopes:
+  - GLOBAL
+  - DOMAIN
+
+identity_policy:
+  skill_id_immutable: true
+  skill_identity_must_remain_independent: true
+  duplicate_skill_id_for_different_asset: FORBIDDEN
+  similarity_does_not_allow_identity_merge: true
+  alternative_does_not_allow_identity_merge: true
+
+version_policy:
+  semantic_version_required: true
+  historical_versions_immutable: true
+  historical_versions_must_be_retained: true
+  overwrite_historical_version: FORBIDDEN
+  delete_historical_version: FORBIDDEN
+  current_version_pointer_allowed: true
+  current_version_pointer_does_not_delete_history: true
+  newer_version_must_be_added_as_new_version: true
+
+retention_policy:
+  permanent_skill_retention: true
+  delete_skill: FORBIDDEN
+  merge_skills: FORBIDDEN
+  remove_inactive_skill: FORBIDDEN
+  remove_quarantined_skill: FORBIDDEN
+  historical_registry_records_must_be_retained: true
+
+status_policy:
+  allowed_statuses:
+    - DRAFT
+    - AVAILABLE
+    - INACTIVE
+    - QUARANTINED
+
+  inactive_means_retained_not_default_selected: true
+  quarantined_means_retained_not_executable: true
+
+selection_policy:
+  available_status_required_for_default_selection: true
+  compatibility_gate_required: true
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+  pairwise_check_required_for_multi_skill_selection: true
+  project_constraints_must_be_checked: true
+  exact_version_may_be_locked_for_reproducibility: true
+
+entry_model:
+  required_skill_fields:
+    - skill_id
+    - name
+    - scope
+    - current_version
+    - versions
+    - created_at
+
+  required_version_fields:
+    - version
+    - status
+    - path
+    - source_id
+    - manifest_path
+    - content_hash
+    - added_at
+
+  notes:
+    - "Each Skill owns an independent identity."
+    - "Each version is an immutable historical record."
+    - "Changing current_version does not remove earlier versions."
+    - "Similar or alternative Skills remain separate Registry entries."
+    - "A quarantined Skill remains permanently recorded but must not execute."
+    - "An inactive Skill remains permanently recorded and may be explicitly selected when allowed."
 
 skills: []
 

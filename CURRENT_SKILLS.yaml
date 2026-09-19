@@ -13,8 +13,11 @@ governance:
   prompt_standard_id: PROMPT_STANDARD_V1.0
   rule: "Skill governance must comply with the locked Prompt Standard reference."
 
-registry:
-  path: registries/SKILL_REGISTRY.yaml
+registries:
+  skill_registry: registries/SKILL_REGISTRY.yaml
+  reference_registry: registries/REFERENCE_REGISTRY.yaml
+  compatibility_registry: registries/SKILL_COMPATIBILITY_REGISTRY.yaml
+  source_registry: registries/SKILL_SOURCE_REGISTRY.yaml
 
 skill_storage:
   global_root: skills/global
@@ -30,9 +33,58 @@ public_repository_policy:
   prohibit_private_data: true
   prohibit_unauthorized_business_secrets: true
 
-resolution:
-  mode: REGISTRY_FIRST
-  rule: "Discover skills through the registry before loading individual skill content."
+discovery:
+  mode: ONLINE_FIRST_PLUS_LOCAL_REGISTRY
+  online_discovery_required: true
+  local_registry_discovery_required: true
+  discovery_before_prompt_generation: true
+  compare_external_with_local_required: true
+  freshness_check_required: true
+  discovery_unavailable_action: BLOCK_AND_REPORT
+  rule: "Every Skill-selection cycle must perform fresh online discovery and compare discovered candidates with the local Skill Registry before final selection."
+
+selection:
+  registry_first_for_local_inventory: true
+  compatibility_gate_required: true
+  unknown_compatibility_is_compatible: false
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+  multi_skill_pairwise_check_required: true
+  final_skill_set_validation_required: true
+  execution_block_requires_compatible_skill_set: true
+
+retention:
+  permanent_skill_retention: true
+  delete_skill: FORBIDDEN
+  merge_skills: FORBIDDEN
+  overwrite_existing_skill_version: FORBIDDEN
+  historical_versions_must_be_retained: true
+  inactive_skills_must_be_retained: true
+  quarantined_skills_must_be_retained: true
+
+isolation:
+  skill_identity_immutable: true
+  independent_skill_directory_required: true
+  independent_manifest_required: true
+  independent_version_history_required: true
+  cross_skill_file_mutation_forbidden: true
+  similarity_does_not_allow_merge: true
+  shared_behavior_does_not_allow_identity_merge: true
+  rule: "Each Skill remains an independent governed asset even when another Skill is similar, newer, or functionally overlapping."
+
+update_policy:
+  external_recheck_required_each_selection_cycle: true
+  new_external_candidate_must_not_overwrite_existing_skill: true
+  newer_external_version_must_be_added_as_new_version: true
+  old_versions_must_remain_available_for_reproducibility: true
+  current_default_version_may_change_without_deleting_history: true
+
+composition:
+  unresolved_conflict_action: BLOCK
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+  conflicting_skills_must_not_coload: true
+  compatibility_must_be_verified_before_coload: true
+  silent_conflict_resolution: false
+  agent_may_add_unapproved_skills: false
 
 publication:
   local_role: AUTHORING_SOURCE

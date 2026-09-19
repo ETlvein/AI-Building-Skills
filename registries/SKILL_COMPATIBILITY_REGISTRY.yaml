@@ -1,0 +1,138 @@
+﻿schema_version: 1
+
+registry:
+  id: SKILL_COMPATIBILITY_REGISTRY
+  repository: AI-Building-Skills
+  status: DRAFT
+  purpose: "Central compatibility and conflict registry controlling whether Skills may be composed in the same execution context."
+
+governance:
+  prompt_standard_repository: "https://github.com/ETlvein/AI-Building-PromptStandard"
+  prompt_standard_ref: "v1.0.0"
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+
+selection_policy:
+  compatibility_check_required: true
+  pairwise_check_required_for_multi_skill_selection: true
+  dependency_check_required: true
+  relationship_check_required: true
+  exclusive_group_check_required: true
+  check_before_execution_block: true
+  unknown_compatibility_is_compatible: false
+
+conflict_policy:
+  unresolved_conflict_action: BLOCK
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+  conflicting_skills_must_not_coload: true
+  silent_conflict_resolution: false
+  automatic_skill_merge: FORBIDDEN
+  owner_escalation_when_required: true
+
+isolation_policy:
+  skill_identity_must_remain_independent: true
+  similarity_does_not_allow_merge: true
+  overlapping_behavior_does_not_allow_merge: true
+  one_skill_must_not_modify_another_skill: true
+  independent_version_history_required: true
+
+retention_policy:
+  delete_skill: FORBIDDEN
+  merge_skills: FORBIDDEN
+  overwrite_historical_version: FORBIDDEN
+  permanent_history_required: true
+
+relation_types:
+
+  COMPATIBLE:
+    direction: SYMMETRIC
+    meaning: "Compatibility has been evaluated and both Skills may be loaded together when all other constraints are satisfied."
+
+  CONFLICT:
+    direction: SYMMETRIC
+    meaning: "The Skills must not be loaded into the same execution context."
+
+  REQUIRES:
+    direction: DIRECTED
+    meaning: "The source Skill requires the target Skill or capability before execution."
+
+  ALTERNATIVE:
+    direction: SYMMETRIC
+    meaning: "The Skills provide alternative approaches and remain independent assets."
+
+  SIMILAR:
+    direction: SYMMETRIC
+    meaning: "The Skills have overlapping characteristics but must remain separate."
+
+  NEWER_THAN:
+    direction: DIRECTED
+    meaning: "The source represents a newer version or evolution while the older Skill or version remains retained."
+
+  EXCLUSIVE:
+    direction: GROUP
+    meaning: "Only one Skill from the same exclusive group may be selected for one execution context."
+
+compatibility_evaluation:
+  required_dimensions:
+    - INPUT_CONTRACT
+    - OUTPUT_CONTRACT
+    - TOOL_REQUIREMENTS
+    - FILE_MUTATION_SCOPE
+    - EXECUTION_ORDER
+    - TECHNOLOGY_STACK
+    - VERSION_REQUIREMENTS
+    - PERMISSION_REQUIREMENTS
+    - SECURITY_RULES
+    - PROJECT_GOVERNANCE
+    - GIT_WORKFLOW
+    - DEPENDENCY_REQUIREMENTS
+
+  all_required_dimensions_must_pass: true
+  partial_evaluation_result: UNKNOWN
+  unknown_result_allows_coload: false
+
+resolution_order:
+  - PROMPT_STANDARD
+  - PROJECT_GOVERNANCE
+  - OWNER_EXPLICIT_REQUIREMENT
+  - TASK_CONSTRAINTS
+  - SKILL_COMPATIBILITY
+  - SKILL_PRECEDENCE
+
+execution_gate:
+  name: SKILL_COMPOSITION_GATE
+
+  required_checks:
+    - CANDIDATE_SKILLS_IDENTIFIED
+    - ONLINE_DISCOVERY_COMPLETED
+    - LOCAL_REGISTRY_DISCOVERY_COMPLETED
+    - EXTERNAL_LOCAL_COMPARISON_COMPLETED
+    - REQUIRED_DEPENDENCIES_RESOLVED
+    - SKILL_IDENTITIES_PRESERVED
+    - EXCLUSIVE_GROUPS_RESOLVED
+    - PAIRWISE_COMPATIBILITY_EVALUATED
+    - DIRECT_CONFLICTS_RESOLVED
+    - UNKNOWN_COMPATIBILITY_RESOLVED
+    - FINAL_SKILL_SET_COMPATIBLE
+
+  pass_result: ALLOW_EXECUTION_BLOCK
+  fail_result: BLOCK_EXECUTION_BLOCK
+
+rules:
+  - "Unknown compatibility is not compatibility."
+  - "Every pair of Skills selected for one execution context must be compatibility-evaluated before co-loading."
+  - "A Skill with an unresolved CONFLICT relation must not be co-loaded with the conflicting Skill."
+  - "A Skill with UNKNOWN compatibility must not be co-loaded until evaluation is completed."
+  - "Only one Skill from the same EXCLUSIVE group may be active in one execution context."
+  - "All REQUIRES dependencies must be satisfied before execution."
+  - "Similar Skills must remain independent and must not be merged automatically."
+  - "Alternative Skills must remain independent and must not be merged automatically."
+  - "Newer Skills or versions must not delete or overwrite historical Skills or versions."
+  - "The AI Control Plane must produce the final compatible Skill set before generating an Agent Execution Block."
+  - "The Agent Execution Plane must not independently add Skills that were not authorized by the AI Control Plane."
+  - "Manifest and Compatibility Registry disagreement must result in BLOCK until reconciled."
+
+relations: []
+
+exclusive_groups: []
+
+updated_date: "2026-09-19"

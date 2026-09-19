@@ -1,0 +1,136 @@
+﻿schema_version: 1
+
+registry:
+  id: SKILL_SOURCE_REGISTRY
+  repository: AI-Building-Skills
+  status: DRAFT
+  purpose: "Permanent registry for external Skill discovery sources, discovery history, version tracking, import decisions, and update checks."
+
+governance:
+  prompt_standard_repository: "https://github.com/ETlvein/AI-Building-PromptStandard"
+  prompt_standard_ref: "v1.0.0"
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+
+discovery_policy:
+  online_discovery_required_each_selection_cycle: true
+  local_registry_discovery_required_each_selection_cycle: true
+  external_local_comparison_required: true
+  freshness_check_required: true
+  discovery_must_precede_final_skill_selection: true
+  discovery_unavailable_action: BLOCK_AND_REPORT
+
+source_priority:
+  preferred_sources:
+    - OFFICIAL_SKILL_SOURCE
+    - OFFICIAL_DOCUMENTATION
+    - VERIFIED_GITHUB_REPOSITORY
+    - MAINTAINER_REPOSITORY
+    - MATURE_OPEN_SOURCE_REPOSITORY
+    - OTHER_PUBLIC_SOURCE
+
+  unknown_source_requires_review: true
+
+source_evaluation:
+  required_checks:
+    - SOURCE_IDENTITY
+    - SOURCE_URL
+    - SOURCE_TYPE
+    - AUTHOR_OR_ORGANIZATION
+    - LICENSE_STATUS
+    - EXTERNAL_VERSION_OR_COMMIT
+    - CONTENT_HASH
+    - LAST_UPDATE_TIME
+    - MALICIOUS_INSTRUCTION_REVIEW
+    - CREDENTIAL_AND_SECRET_REVIEW
+    - PRIVATE_DATA_REVIEW
+    - LOCAL_DUPLICATE_COMPARISON
+    - LOCAL_SIMILARITY_COMPARISON
+    - COMPATIBILITY_IMPACT
+    - PROJECT_RELEVANCE
+
+  all_required_checks_must_complete_before_import: true
+
+import_policy:
+  automatic_import_without_review: false
+  import_requires_public_safety_review: true
+  import_requires_local_comparison: true
+  import_requires_identity_assignment: true
+  import_requires_compatibility_evaluation: true
+
+  overwrite_existing_skill: FORBIDDEN
+  merge_with_existing_skill: FORBIDDEN
+  delete_existing_skill: FORBIDDEN
+
+  similar_skill_action: KEEP_SEPARATE
+  alternative_skill_action: KEEP_SEPARATE
+  newer_skill_action: ADD_WITHOUT_DELETING_HISTORY
+  newer_version_action: ADD_NEW_VERSION
+
+retention_policy:
+  source_records_permanent: true
+  rejected_source_records_retained: true
+  quarantined_source_records_retained: true
+  historical_discovery_records_retained: true
+  historical_versions_retained: true
+  source_history_must_not_be_rewritten: true
+
+update_policy:
+  recheck_external_sources_each_selection_cycle: true
+  compare_external_version_required: true
+  compare_external_hash_required_when_available: true
+  update_detected_action: REVIEW_AS_NEW_VERSION
+  old_version_retention_required: true
+  silent_update_forbidden: true
+
+decision_types:
+
+  DISCOVERED:
+    meaning: "External Skill candidate was discovered but has not completed review."
+
+  REVIEW_REQUIRED:
+    meaning: "Candidate requires technical, safety, license, compatibility, or governance review."
+
+  APPROVED_FOR_IMPORT:
+    meaning: "Candidate passed required review and may be imported as an independent Skill or Skill version."
+
+  IMPORTED:
+    meaning: "Candidate has been imported into the governed local Skill repository."
+
+  REJECTED:
+    meaning: "Candidate is not approved for use, but its source record remains permanently retained."
+
+  QUARANTINED:
+    meaning: "Candidate is retained for evidence but must not be executed or imported until resolved."
+
+version_policy:
+  immutable_historical_versions: true
+  overwrite_historical_version: FORBIDDEN
+  delete_historical_version: FORBIDDEN
+  current_pointer_may_change: true
+  current_pointer_change_does_not_delete_history: true
+
+isolation_policy:
+  external_candidate_must_receive_independent_identity: true
+  similar_candidates_must_remain_separate: true
+  alternative_candidates_must_remain_separate: true
+  source_identity_must_be_preserved: true
+  imported_skill_identity_must_be_preserved: true
+
+source_record_required_fields:
+  - source_id
+  - source_url
+  - source_type
+  - discovered_at
+  - last_checked_at
+  - decision
+  - external_identifier
+  - external_version_or_commit
+  - content_hash
+  - license_status
+  - safety_review_status
+  - local_comparison_status
+  - compatibility_review_status
+
+sources: []
+
+updated_date: "2026-09-19"

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/ETlvein/AI-Building-Skills/schemas/SKILL_MANIFEST.schema.json",
   "title": "AI-Building Skill Manifest",
-  "description": "Schema for reusable public GLOBAL and DOMAIN Skill manifests.",
+  "description": "Schema for permanently retained, independently governed reusable Skills.",
   "type": "object",
   "additionalProperties": false,
 
@@ -11,14 +11,18 @@
     "skill",
     "governance",
     "classification",
+    "source",
     "resolution",
     "dependencies",
+    "composition",
+    "lifecycle",
     "compatibility",
     "publication",
     "updated_date"
   ],
 
   "properties": {
+
     "schema_version": {
       "type": "integer",
       "const": 1
@@ -60,8 +64,9 @@
           "type": "string",
           "enum": [
             "DRAFT",
-            "ACTIVE",
-            "DEPRECATED"
+            "AVAILABLE",
+            "INACTIVE",
+            "QUARANTINED"
           ]
         },
         "path": {
@@ -121,6 +126,39 @@
       }
     },
 
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "source_type",
+        "source_url",
+        "external_identifier",
+        "external_version_or_commit",
+        "content_hash"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        },
+        "external_identifier": {
+          "type": "string"
+        },
+        "external_version_or_commit": {
+          "type": "string"
+        },
+        "content_hash": {
+          "type": "string"
+        }
+      }
+    },
+
     "resolution": {
       "type": "object",
       "additionalProperties": false,
@@ -173,6 +211,126 @@
             "type": "string",
             "minLength": 1
           }
+        }
+      }
+    },
+
+    "composition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "conflicts_with",
+        "similar_to",
+        "alternative_to",
+        "newer_than",
+        "exclusive_groups",
+        "precedence",
+        "unknown_compatibility_action"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "COMPOSABLE",
+            "STANDALONE"
+          ]
+        },
+        "conflicts_with": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "similar_to": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "alternative_to": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "newer_than": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "exclusive_groups": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "precedence": {
+          "type": "string",
+          "enum": [
+            "LOW",
+            "NORMAL",
+            "HIGH"
+          ]
+        },
+        "unknown_compatibility_action": {
+          "type": "string",
+          "const": "BLOCK_UNTIL_EVALUATED"
+        }
+      }
+    },
+
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "permanent_retention",
+        "deletion_allowed",
+        "merge_allowed",
+        "historical_version_overwrite_allowed",
+        "identity_preserved",
+        "independent_directory_required",
+        "independent_version_history_required"
+      ],
+      "properties": {
+        "permanent_retention": {
+          "type": "boolean",
+          "const": true
+        },
+        "deletion_allowed": {
+          "type": "boolean",
+          "const": false
+        },
+        "merge_allowed": {
+          "type": "boolean",
+          "const": false
+        },
+        "historical_version_overwrite_allowed": {
+          "type": "boolean",
+          "const": false
+        },
+        "identity_preserved": {
+          "type": "boolean",
+          "const": true
+        },
+        "independent_directory_required": {
+          "type": "boolean",
+          "const": true
+        },
+        "independent_version_history_required": {
+          "type": "boolean",
+          "const": true
         }
       }
     },
