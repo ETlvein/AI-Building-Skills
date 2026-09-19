@@ -1,4 +1,4 @@
-﻿# Skill Discovery & Selection Protocol
+# Skill Discovery & Selection Protocol
 
 ## 1. Protocol Identity
 

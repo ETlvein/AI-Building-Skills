@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/ETlvein/AI-Building-Skills/schemas/SKILL_MANIFEST.schema.json",
   "title": "AI-Building Skill Manifest",

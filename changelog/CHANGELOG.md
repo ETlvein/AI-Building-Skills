@@ -1,4 +1,4 @@
-﻿# AI-Building-Skills Changelog
+# AI-Building-Skills Changelog
 
 ## [Unreleased]
 

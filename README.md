@@ -1,4 +1,4 @@
-﻿# AI-Building-Skills
+# AI-Building-Skills
 
 Central repository for reusable AI Skills, Skill discovery governance, compatibility control, version retention, and safe public technical references.
 

@@ -1,4 +1,4 @@
-﻿# Skill
+# Skill
 
 ## 1. Identity
 
