@@ -1,0 +1,210 @@
+schema_version: 1
+audit:
+  audit_id: GLOBAL_SYSTEMATIC_DEBUGGING_IMPORT_20261009
+  project_id: GLOBAL_IMPORT
+  task_id: SKILL_IMPORT_ONLY
+  created_at: '2026-10-09'
+  status: COMPLETED
+governance:
+  prompt_standard_ref: v1.0.0
+  discovery_protocol: protocols/SKILL_DISCOVERY_SELECTION_PROTOCOL.md
+  skill_registry: registries/SKILL_REGISTRY.yaml
+  source_registry: registries/SKILL_SOURCE_REGISTRY.yaml
+  compatibility_registry: registries/SKILL_COMPATIBILITY_REGISTRY.yaml
+task_profile:
+  objective: Import one governed root-cause debugging Skill
+  domain:
+  - software-debugging
+  environment:
+  - Codex
+  - Windows
+  tools:
+  - Official Skill Installer
+  - Official Skill Creator validator
+  - Git
+  project_constraints:
+  - Owner authority and current permissions prevail
+  - No repair execution during import
+  file_mutation_scope:
+  - New version directory
+  - Skill and source registry data entries
+  required_outputs:
+  - Independent runtime
+  - Manifest
+  - Source archive
+  - Published provenance
+  safety_constraints:
+  - No private project data published
+  - No additional runtime Skill dependency
+online_discovery:
+  required: true
+  completed: true
+  searched_at: '2026-10-09'
+  search_scope:
+  - GitHub primary maintainer sources for systematic-debugging and diagnosing bugs
+  sources_checked:
+  - https://github.com/obra/superpowers
+  - https://github.com/obra/superpowers/issues/2375
+  - https://github.com/obra/superpowers/issues/2277
+  candidates_found:
+  - obra/superpowers:systematic-debugging
+local_discovery:
+  required: true
+  completed: true
+  candidates_found: []
+external_local_comparison:
+  completed: true
+  comparisons:
+  - Central v1.0.0 Skill Registry is empty; local installation/authoring utilities
+    are not debugging replacements
+  classifications:
+    same_identity: []
+    same_version: []
+    newer_version: []
+    similar: []
+    alternative: []
+    new_skill:
+    - GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+    conflicting: []
+source_reviews:
+- source_id: OBRA_SUPERPOWERS_SYSTEMATIC_DEBUGGING_8CA22DB
+  source_url: https://github.com/obra/superpowers
+  source_type: MAINTAINER_REPOSITORY
+  discovered_at: '2026-10-09'
+  last_checked_at: '2026-10-09'
+  decision: IMPORTED
+  external_identifier: obra/superpowers:skills/systematic-debugging
+  external_version_or_commit: 8ca22dba9a94f28898bbce59f2537ff4d87c747d
+  content_hash: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
+  license_status: MIT_VERIFIED
+  safety_review_status: APPROVED_GOVERNED_ADAPTATION
+  local_comparison_status: NEW_IDENTITY_EMPTY_REGISTRY
+  compatibility_review_status: STANDALONE_ONLY_NO_PAIRWISE_COLOAD_APPROVAL
+candidate_set:
+  candidates:
+  - skill_id: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+    exact_version: 1.0.0
+compatibility_evaluation:
+  required_for_multi_skill: true
+  completed: true
+  required_dimensions:
+  - INPUT_CONTRACT
+  - OUTPUT_CONTRACT
+  - TOOL_REQUIREMENTS
+  - FILE_MUTATION_SCOPE
+  - EXECUTION_ORDER
+  - TECHNOLOGY_STACK
+  - VERSION_REQUIREMENTS
+  - PERMISSION_REQUIREMENTS
+  - SECURITY_RULES
+  - PROJECT_GOVERNANCE
+  - GIT_WORKFLOW
+  - DEPENDENCY_REQUIREMENTS
+  pairwise_results: []
+  unresolved_conflicts: []
+  unknown_relations: []
+  dimension_checks:
+    INPUT_CONTRACT: Bug or failed acceptance symptom plus approved source/evidence;
+      no credentials required
+    OUTPUT_CONTRACT: Root-cause evidence, UNKNOWN limits, bounded recommendations;
+      fixes only with existing authorization
+    TOOL_REQUIREMENTS: Markdown-only runtime; no mandatory Bash, signing tool, new
+      package, or connector
+    FILE_MUTATION_SCOPE: No write authority from Skill; inspection remains read-only;
+      repairs obey project whitelist
+    EXECUTION_ORDER: Investigate, compare, test hypothesis, implement only when authorized
+    TECHNOLOGY_STACK: Language-independent reasoning; supporting TypeScript snippets
+      are illustrative, not executable helpers
+    VERSION_REQUIREMENTS: Governed Skill 1.0.0, upstream commit pinned; PromptStandard
+      v1.0.0
+    PERMISSION_REQUIREMENTS: Existing Owner authority, permission profile and Gates
+      prevail; installation does not open repair permissions
+    SECURITY_RULES: Remove secret-value sample; prohibit disclosure; isolate pressure
+      prompts and scripts outside runtime
+    PROJECT_GOVERNANCE: Frozen architecture preserved; no budget resets; new Skill
+      requires separate selection; incomplete acceptance UNKNOWN
+    GIT_WORKFLOW: Skill supplies no commit/push/merge authorization; published library
+      version has independent immutable source history
+    DEPENDENCY_REQUIREMENTS: Three local Markdown references, no other Skill or executable
+      dependency; other runtime Skill compatibility UNKNOWN
+composition_gate:
+  gate: SKILL_COMPOSITION_GATE
+  status: PASS
+  required_conditions:
+    online_discovery_completed: false
+    local_discovery_completed: false
+    external_local_comparison_completed: false
+    required_source_reviews_completed: false
+    dependencies_resolved: false
+    exclusive_groups_resolved: false
+    pairwise_compatibility_evaluated: false
+    no_conflicts: false
+    no_unknown_compatibility: false
+    skill_identities_preserved: false
+    project_governance_satisfied: false
+  pass_result: ALLOW_EXECUTION_BLOCK
+  fail_result: BLOCK_EXECUTION_BLOCK
+  reason: Single STANDALONE target; pairwise gate is not required. No second runtime
+    Skill selected or loaded.
+final_skill_set:
+  status: DEFINED
+  skills:
+  - skill_id: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+    exact_version: 1.0.0
+    reason_selected: Root-cause investigation for bugs, acceptance failures and repeated
+      repair cycles, respecting project permissions and frozen contracts.
+    source_status: VERIFIED_PINNED_MIT_GOVERNED_ADAPTATION
+    compatibility_status: STANDALONE_ONLY; MULTI_SKILL_UNKNOWN
+    dependencies:
+      tools: []
+      references:
+      - root-cause-tracing.md
+      - defense-in-depth.md
+      - condition-based-waiting.md
+      skills: []
+    constraints:
+    - Existing project scope, permissions and stopping rules
+    - Do not load other Skills without pairwise gate
+    - Import is not repair authorization
+  required_skill_fields:
+  - skill_id
+  - exact_version
+  - reason_selected
+  - source_status
+  - compatibility_status
+  - dependencies
+  - constraints
+rejected_candidates: []
+no_skill_result:
+  allowed: true
+  result_code: NO_APPLICABLE_SKILL
+  reason: ''
+retention_assertions:
+  existing_skills_deleted: false
+  skills_merged: false
+  historical_versions_overwritten: false
+  skill_identity_changed: false
+execution_authorization:
+  agent_may_use_only_final_skill_set: true
+  agent_may_add_unapproved_skill: false
+evidence:
+  online_search_evidence:
+  - Fresh discovery 2026-10-09; pinned maintainer directory and license fetched
+  local_registry_evidence:
+  - registries/SKILL_REGISTRY.yaml at de3fb8e541a71722af018aebc08304d19745ab8d
+  source_review_evidence:
+  - SOURCE_REVIEW.yaml
+  - FILE_INVENTORY.yaml
+  comparison_evidence:
+  - Empty baseline registry; distinct local installation/authoring capabilities
+  compatibility_evidence:
+  - Single target has no runtime Skill dependency
+  - 12 required governance dimensions inspected; additional pairwise compatibility
+    is UNKNOWN
+  final_selection_evidence:
+  - runtime/SKILL_MANIFEST.yaml
+final_result:
+  result: APPROVED_SINGLE_SKILL_IMPORT
+  reason: One pinned reviewed debugging asset with minimal governance adaptation;
+    no composition or project repair result claimed
+updated_at: '2026-10-09'

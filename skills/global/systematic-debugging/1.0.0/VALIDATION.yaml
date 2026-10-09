@@ -1,0 +1,12 @@
+creator_validator: Skill is valid!
+manifest_schema: PASS_DRAFT_2020_12
+registry_policy_preservation: PASS
+upstream_git_blob_checks: 11
+runtime_file_count: 7
+runtime_tree_hash: sha256:a2b2d590b9eb5ac0075d1808fefff4359d5087d3b6c8aa2440170a2732b78c36
+additional_skill_dependencies: []
+runtime_executables: []
+composition_gate: PASS_SINGLE_STANDALONE_SKILL
+sensitive_project_marker_check: PASS
+project_repair_validation: NOT_RUN
+validation_python_mode: UTF8_NO_BYTECODE

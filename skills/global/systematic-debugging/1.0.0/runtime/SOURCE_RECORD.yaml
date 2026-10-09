@@ -1,0 +1,14 @@
+skill_id: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+governed_version: 1.0.0
+source_id: OBRA_SUPERPOWERS_SYSTEMATIC_DEBUGGING_8CA22DB
+source_url: https://github.com/obra/superpowers
+external_identifier: obra/superpowers:skills/systematic-debugging
+external_version_or_commit: 8ca22dba9a94f28898bbce59f2537ff4d87c747d
+license: MIT
+adaptation: Governed standalone import; original source and review retained in the
+  library
+library_version_url: https://github.com/ETlvein/AI-Building-Skills/tree/main/skills/global/systematic-debugging/1.0.0
+composition: STANDALONE; any additional runtime Skill requires a separate pairwise
+  gate
+runtime_executables: []
+project_repair_validation: NOT_RUN

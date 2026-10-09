@@ -90,6 +90,19 @@ entry_model:
     - "A quarantined Skill remains permanently recorded but must not execute."
     - "An inactive Skill remains permanently recorded and may be explicitly selected when allowed."
 
-skills: []
+skills:
+- skill_id: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  name: systematic-debugging
+  scope: GLOBAL
+  current_version: 1.0.0
+  versions:
+  - version: 1.0.0
+    status: AVAILABLE
+    path: skills/global/systematic-debugging/1.0.0/runtime
+    source_id: OBRA_SUPERPOWERS_SYSTEMATIC_DEBUGGING_8CA22DB
+    manifest_path: skills/global/systematic-debugging/1.0.0/runtime/SKILL_MANIFEST.yaml
+    content_hash: sha256:a2b2d590b9eb5ac0075d1808fefff4359d5087d3b6c8aa2440170a2732b78c36
+    added_at: '2026-10-09'
+  created_at: '2026-10-09'
 
-updated_date: "2026-09-19"
+updated_date: "2026-10-09"

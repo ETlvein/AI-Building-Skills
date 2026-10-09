@@ -131,6 +131,19 @@ source_record_required_fields:
   - local_comparison_status
   - compatibility_review_status
 
-sources: []
+sources:
+- source_id: OBRA_SUPERPOWERS_SYSTEMATIC_DEBUGGING_8CA22DB
+  source_url: https://github.com/obra/superpowers
+  source_type: MAINTAINER_REPOSITORY
+  discovered_at: '2026-10-09'
+  last_checked_at: '2026-10-09'
+  decision: IMPORTED
+  external_identifier: obra/superpowers:skills/systematic-debugging
+  external_version_or_commit: 8ca22dba9a94f28898bbce59f2537ff4d87c747d
+  content_hash: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
+  license_status: MIT_VERIFIED
+  safety_review_status: APPROVED_GOVERNED_ADAPTATION
+  local_comparison_status: NEW_IDENTITY_EMPTY_REGISTRY
+  compatibility_review_status: STANDALONE_ONLY_NO_PAIRWISE_COLOAD_APPROVAL
 
-updated_date: "2026-09-19"
+updated_date: "2026-10-09"

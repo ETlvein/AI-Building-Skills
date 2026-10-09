@@ -1,0 +1,63 @@
+schema_version: 1
+skill:
+  id: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  name: systematic-debugging
+  version: 1.0.0
+  scope: GLOBAL
+  status: AVAILABLE
+  path: skills/global/systematic-debugging/1.0.0/runtime
+  description: Root-cause investigation for bugs, acceptance failures and repeated
+    repair cycles, respecting project permissions and frozen contracts.
+governance:
+  prompt_standard_repository: https://github.com/ETlvein/AI-Building-PromptStandard
+  prompt_standard_ref: v1.0.0
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+classification:
+  domain: software-debugging
+  tags:
+  - root-cause-analysis
+  - acceptance
+  - bounded-repair
+source:
+  source_id: OBRA_SUPERPOWERS_SYSTEMATIC_DEBUGGING_8CA22DB
+  source_type: MAINTAINER_REPOSITORY
+  source_url: https://github.com/obra/superpowers
+  external_identifier: obra/superpowers:skills/systematic-debugging
+  external_version_or_commit: 8ca22dba9a94f28898bbce59f2537ff4d87c747d
+  content_hash: sha256:808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787
+resolution:
+  registry_discoverable: true
+  load_policy: ON_DEMAND
+dependencies:
+  tools: []
+  references:
+  - root-cause-tracing.md
+  - defense-in-depth.md
+  - condition-based-waiting.md
+  skills: []
+composition:
+  mode: STANDALONE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
+compatibility:
+  environments:
+  - Codex
+  - Windows PowerShell (documentation workflow)
+  minimum_prompt_standard: v1.0.0
+publication:
+  public_safe: true
+  published: true
+updated_date: '2026-10-09'
