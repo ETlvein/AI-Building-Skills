@@ -1,0 +1,8 @@
+skill_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+versions:
+- version: 1.0.0
+  status: AVAILABLE
+  path: skills/domain/archify-reference-diagrams/1.0.0/runtime
+  source_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS_SOURCE_88D1AE4
+  immutable: true
+  added_at: '2026-10-17'

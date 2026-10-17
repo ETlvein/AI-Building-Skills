@@ -1,0 +1,8 @@
+skill_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+versions:
+- version: 1.0.0
+  status: AVAILABLE
+  path: skills/domain/voicestudio-local-audio/1.0.0/runtime
+  source_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO_SOURCE_F47221A
+  immutable: true
+  added_at: '2026-10-17'

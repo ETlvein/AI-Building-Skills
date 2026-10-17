@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "scope": "Publication files except this inventory itself",
+  "base_commit": "7cd168e5262faab133ab7a870b7078251e81e3c7",
+  "files": [
+    {
+      "path": "SKILL_CATALOG.md",
+      "sha256": "sha256:928f9100627403e8e6f4bb90617ef52f5168f81c5fed72ea58d3c0cef56e8377",
+      "git_blob_sha": "ba1d3e5ee2a54779fe173d2eda5aa36fa22e31cc",
+      "utf8_bytes": 3929
+    },
+    {
+      "path": "catalogs/2026-10-17/CATALOG.json",
+      "sha256": "sha256:1ef0dcfb5f7595a4a506c17e9a6e7773405cfeb93937e24f6e222bcd508377f3",
+      "git_blob_sha": "6d58ccd92da8a652a7d9ee667dd3f0ebc68c3cfc",
+      "utf8_bytes": 2185
+    },
+    {
+      "path": "catalogs/2026-10-17/PREPUBLICATION_VALIDATION.json",
+      "sha256": "sha256:a1a8cfd15fe9fcfbd939c5061a95f2cc90aff9dd0142c3a20ead816e672a132c",
+      "git_blob_sha": "55a3d7ac1635629442c5224478607921d4158980",
+      "utf8_bytes": 3206
+    },
+    {
+      "path": "catalogs/2026-10-17/SELECTION_AUDIT.json",
+      "sha256": "sha256:1edf350efd0b6620a16b5e9b13d31fdad0f8489d1023cc7d735eab7f59c6bf0c",
+      "git_blob_sha": "bc423e0b1a03ae237e21d8a194df2236870e88e2",
+      "utf8_bytes": 19087
+    },
+    {
+      "path": "registries/REFERENCE_REGISTRY.yaml",
+      "sha256": "sha256:79a9e07c3c1b149043264bd535d1100653ddd959f38491b60dd22241d3274aa7",
+      "git_blob_sha": "71104bbee8677af38f9afb03cd20a64a4f88c67e",
+      "utf8_bytes": 3129
+    },
+    {
+      "path": "registries/SKILL_COMPATIBILITY_REGISTRY.yaml",
+      "sha256": "sha256:caa2ac9d6a50c8fcdad5c28989148c2cc0b306defa1efaff6b2bc96d1d60a435",
+      "git_blob_sha": "b8d6af7c6911e4935882284354cba46f49ab2b5e",
+      "utf8_bytes": 15547
+    },
+    {
+      "path": "registries/SKILL_REGISTRY.yaml",
+      "sha256": "sha256:116e51a64886df36df574bc2a1dbc97120a7fc9bdc2c28ce182548d1c1b831e6",
+      "git_blob_sha": "cd284608bdc9727a117aad633218e3bdb5d3866a",
+      "utf8_bytes": 5902
+    },
+    {
+      "path": "registries/SKILL_SOURCE_REGISTRY.yaml",
+      "sha256": "sha256:c0770f99d492c33ebd33a0143a6af28230564aed999e25d64af6fe11ba33dfad",
+      "git_blob_sha": "1fd5ec3acaff29f6cca9dd79f471ec23207c8c5a",
+      "utf8_bytes": 9034
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/SOURCE_REVIEW.json",
+      "sha256": "sha256:e89f26c47e058379fd68819b328daada3ae2b23a3a6bec7cef8c59c121bef45c",
+      "git_blob_sha": "75e456eba227f26f8534c87345822890272877a3",
+      "utf8_bytes": 1996
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/runtime/LICENSE",
+      "sha256": "sha256:e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402",
+      "git_blob_sha": "85cfac9168cbcc87f55dc3939311e7f612e5c648",
+      "utf8_bytes": 1067
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/runtime/SKILL.md",
+      "sha256": "sha256:750556ab4751bd06135da11944d34b0dc9f4f82cfe693904b33574306a9f8588",
+      "git_blob_sha": "e2cc780fc58cb3308c264f97c8ee6500d1a6ccd0",
+      "utf8_bytes": 2385
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/runtime/SKILL_MANIFEST.yaml",
+      "sha256": "sha256:dc1dee5dfb3aa9234fde15043362b3a595a4bf08f98e206ea6a4999b8a06586f",
+      "git_blob_sha": "7e2a594f36506f046232f6e5f0ff4b924cb76aa0",
+      "utf8_bytes": 2051
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/runtime/SOURCE_RECORD.yaml",
+      "sha256": "sha256:4704eb222c1c35bd7d488708ce1afe38ccfe79b5bcb29469bc2841895b476583",
+      "git_blob_sha": "6c545630188fd687aa833d45778ed3ee80ab66e2",
+      "utf8_bytes": 1408
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/runtime/references/OPERATING_NOTES.md",
+      "sha256": "sha256:3f13590d9c0c5e8569578d72d976581fc144e4eb470322b3a8b0cd0dda45935e",
+      "git_blob_sha": "78b98019d75a5257b969cdaf7b1734101523bcbe",
+      "utf8_bytes": 1787
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/upstream/LICENSE",
+      "sha256": "sha256:e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402",
+      "git_blob_sha": "85cfac9168cbcc87f55dc3939311e7f612e5c648",
+      "utf8_bytes": 1067
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/1.0.0/upstream/SKILL.md.txt",
+      "sha256": "sha256:0df9cd22ade17b77cc3698a14f1224c4aad9df5d533a1878dbe5df11b62f8377",
+      "git_blob_sha": "462f4c282c8644744510ba7f47e1f8eb7efde622",
+      "utf8_bytes": 8636
+    },
+    {
+      "path": "skills/domain/agent-reach-public-data/VERSION_HISTORY.yaml",
+      "sha256": "sha256:13fea79d40b19232bd4afe65c2d99516f06466c854cfc1f1ccc95b01a1f09f68",
+      "git_blob_sha": "260e3eeb8c0655168810b9c74da58f928cc9b58c",
+      "utf8_bytes": 250
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/SOURCE_REVIEW.json",
+      "sha256": "sha256:1c4badf520ec031102f7387da75390613d847c1cfcb9c353175c9e4f99d5dc17",
+      "git_blob_sha": "496c8471236694bf8daa8bf7ca26a6d349cd4c41",
+      "utf8_bytes": 1893
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/runtime/LICENSE",
+      "sha256": "sha256:b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706",
+      "git_blob_sha": "0f9f9397a0496ef63c7d555d36b40c3f932aff84",
+      "utf8_bytes": 1102
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/runtime/SKILL.md",
+      "sha256": "sha256:a6d51a5102996a3c40c0f6651914337a23682bae78ec3757fd2016ca30e248dc",
+      "git_blob_sha": "bd0d7117e5d16a137afc1386b09319d19135a18c",
+      "utf8_bytes": 2223
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/runtime/SKILL_MANIFEST.yaml",
+      "sha256": "sha256:1b4e05eef7a699fc89bd100ff690a13424f20726a1762771ece9f36503e1ec03",
+      "git_blob_sha": "4da51ba413cbcc14cf6557440113222edebabd96",
+      "utf8_bytes": 1929
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/runtime/SOURCE_RECORD.yaml",
+      "sha256": "sha256:99e0875d0fb489547adc406b754b2ba1815f81ef12ccc007adef834779e275da",
+      "git_blob_sha": "9489026aae04fdb52d2a62a8e38f42f5598e14f9",
+      "utf8_bytes": 1360
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/runtime/references/OPERATING_NOTES.md",
+      "sha256": "sha256:11cc99562a20cffccabc246dfb5d0d2aed7f17a5a1522589c7e07a4eec3b406f",
+      "git_blob_sha": "882ef9f981c34a6864f1f59444bc6ba853031865",
+      "utf8_bytes": 1699
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/upstream/LICENSE",
+      "sha256": "sha256:b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706",
+      "git_blob_sha": "0f9f9397a0496ef63c7d555d36b40c3f932aff84",
+      "utf8_bytes": 1102
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/upstream/SKILL.md.txt",
+      "sha256": "sha256:55c126d68c1fbef114ccdef8dd0e7f046419dc9203ac7f6dab1728f6bab3ca71",
+      "git_blob_sha": "278cbcda543b48440a6e2ea817fc97a01fd722d0",
+      "utf8_bytes": 15749
+    },
+    {
+      "path": "skills/domain/archify-reference-diagrams/VERSION_HISTORY.yaml",
+      "sha256": "sha256:176e50f6b1448a306e2a4b5dff2a14f72d2de3818e9c824bd82b922c06dccdbb",
+      "git_blob_sha": "161d508386ed629dae9861ce45bcae9251b948ed",
+      "utf8_bytes": 259
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/SOURCE_REVIEW.json",
+      "sha256": "sha256:6e1d3a8da1392826e2d080c1cb992fd8c72fb458257b966facc9a8750ee32cd5",
+      "git_blob_sha": "3faa4afdf9564ae4234bf1a8dc40efd37a988828",
+      "utf8_bytes": 1885
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/runtime/LICENSE",
+      "sha256": "sha256:8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "git_blob_sha": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+      "utf8_bytes": 34523
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/runtime/SKILL.md",
+      "sha256": "sha256:96295286d1f7d77386eb8ea0f3226ac2711e9786f16ad2b6bc4187bab2ef3bea",
+      "git_blob_sha": "511dde6de5e0ae198a7d8560b3960b778bb0b679",
+      "utf8_bytes": 2133
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/runtime/SKILL_MANIFEST.yaml",
+      "sha256": "sha256:09e9e941d885e8954b2526f13465f82f0901b03c6620877e5deb60bb3ffd0bef",
+      "git_blob_sha": "79475dd8e48299bda406697ad44a3f4d071ffa4e",
+      "utf8_bytes": 1979
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/runtime/SOURCE_RECORD.yaml",
+      "sha256": "sha256:6825edadb23d3d3de5b545dbed1cbad4d60f2ac846615a245426117eb283e797",
+      "git_blob_sha": "23affd93fb9a560907f0b83e0e1a00565131e0b2",
+      "utf8_bytes": 1337
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/runtime/references/OPERATING_NOTES.md",
+      "sha256": "sha256:409195d1ada9970cf02eb316ada97a029ea15da95e923ae2ed1068f2e1e53d45",
+      "git_blob_sha": "07e68ecf78198ad3633fd4bff31e4909ea87d6d2",
+      "utf8_bytes": 1711
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/upstream/LICENSE",
+      "sha256": "sha256:8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "git_blob_sha": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+      "utf8_bytes": 34523
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/1.0.0/upstream/README.md.txt",
+      "sha256": "sha256:5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+      "git_blob_sha": "5e8071d0a53ad17b7ecf694b159498e1e872a1ae",
+      "utf8_bytes": 8958
+    },
+    {
+      "path": "skills/domain/mirofish-scenarios/VERSION_HISTORY.yaml",
+      "sha256": "sha256:3b5cd8862dd6b63329dd78796cd99960dd967db47c74610f0689333b9120bea3",
+      "git_blob_sha": "8af7c9c61ea40c34aad638cf78559162f22783d3",
+      "utf8_bytes": 235
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/SOURCE_REVIEW.json",
+      "sha256": "sha256:9bda9b0d90553e917976d1a12dd4cc06823e5b85340168ae43dc98463640217d",
+      "git_blob_sha": "b872377cc05411c1ab8ac5082d7415d4ad60569b",
+      "utf8_bytes": 1961
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/runtime/LICENSE",
+      "sha256": "sha256:4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "git_blob_sha": "48a2f6640b81ff8eca9ce7f6a96337692713ef5b",
+      "utf8_bytes": 1065
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/runtime/SKILL.md",
+      "sha256": "sha256:79f7775ab6baf832a89c7a2bd77b3338a1d2c690d7c879ebbdb5e59cc2c89fe2",
+      "git_blob_sha": "7715350229fa18411b7149828bcedd4a96b62f3e",
+      "utf8_bytes": 1994
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/runtime/SKILL_MANIFEST.yaml",
+      "sha256": "sha256:84eb5000628e8c304e9fb236006e95ca0bc15afbac99075eec839e6e7338adf2",
+      "git_blob_sha": "c16bf0e9b79679527881767a3369cb11d77c9f1c",
+      "utf8_bytes": 1927
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/runtime/SOURCE_RECORD.yaml",
+      "sha256": "sha256:18d6bf0c7d88dbbed13f7e067d6fa160b529f4852ba88a21e0e3364379c787d2",
+      "git_blob_sha": "9ba2f1f66a356362ec45b685d1ce1613f2db9928",
+      "utf8_bytes": 1820
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/runtime/references/OPERATING_NOTES.md",
+      "sha256": "sha256:3558a6cd9908494e7ceb0fa3a87ade1a932b1fb6c73e07c57181bdadb6bb9da3",
+      "git_blob_sha": "6aee365f70e0ba606e3796922863dfdb910699df",
+      "utf8_bytes": 1786
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/upstream/LICENSE",
+      "sha256": "sha256:4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "git_blob_sha": "48a2f6640b81ff8eca9ce7f6a96337692713ef5b",
+      "utf8_bytes": 1065
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/upstream/minimalist-skill/SKILL.md.txt",
+      "sha256": "sha256:769ab38eed137bb22c7c09ee08ebb628e9acf3ad37f138d43f772e3af83933e4",
+      "git_blob_sha": "d319ad9f49dfec1d44622effdad22d99e53f42cb",
+      "utf8_bytes": 8212
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/1.0.0/upstream/taste-skill/SKILL.md.txt",
+      "sha256": "sha256:ee847084e58f5a81a46120912be9cd15f083570a6ca8f3d1a30372a720633043",
+      "git_blob_sha": "91d114a9d8d1e9999ff8bdc7c6fc2303a49af754",
+      "utf8_bytes": 29312
+    },
+    {
+      "path": "skills/domain/taste-ui-reference/VERSION_HISTORY.yaml",
+      "sha256": "sha256:9ded219aa2a0016a4f57bf90fcb7f30865b7cd33ee9b582955ca14551a352e2a",
+      "git_blob_sha": "0a3a7a794ec582c566ced6d9aefb4dfac7a02719",
+      "utf8_bytes": 253
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/SOURCE_REVIEW.json",
+      "sha256": "sha256:f8d076d0c1e03d7d64c439f455a492893b98cd1a202e415e29e6b7bf6b220530",
+      "git_blob_sha": "5d355debcdebc52e1da2d5d182367d2fae9c990a",
+      "utf8_bytes": 1910
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/runtime/LICENSE",
+      "sha256": "sha256:0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "git_blob_sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "utf8_bytes": 34523
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/runtime/SKILL.md",
+      "sha256": "sha256:756d7156151db86e740079e3dc76de09e2e7e52348797970d8c5d476a5b2510f",
+      "git_blob_sha": "38c9ee44c55c06258c466252e30df714e6000afd",
+      "utf8_bytes": 2546
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/runtime/SKILL_MANIFEST.yaml",
+      "sha256": "sha256:b217c783f47f86b3da2edf8460cfe8d8bd1c8e285eeb9224927080481b796095",
+      "git_blob_sha": "26ab1938c44f7a7b3434401e039e5a8ca41801f7",
+      "utf8_bytes": 2001
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/runtime/SOURCE_RECORD.yaml",
+      "sha256": "sha256:ca74b6fd9ba6a6ff5bc697b76435b6d03614b4b9971b1b15867dd074a8c5618b",
+      "git_blob_sha": "cd405bfc8f8693a614bf436fe43d8b56e1fb9494",
+      "utf8_bytes": 1412
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/runtime/references/OPERATING_NOTES.md",
+      "sha256": "sha256:866ce81d18eabe4c5abec48c005dd50e4afb1ee8cc3f03d8c70d086b15e9d850",
+      "git_blob_sha": "1a7810645a97fc27efe44816f1c74161e5a292e2",
+      "utf8_bytes": 1727
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/upstream/LICENSE",
+      "sha256": "sha256:0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "git_blob_sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "utf8_bytes": 34523
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/upstream/SKILL.md.txt",
+      "sha256": "sha256:619b1c90992d453f23a402f4847d86bcd33eb6621d3182056ef2c9ec34cd0d1e",
+      "git_blob_sha": "a612d3fd67d1f917e48425f47cde556c7c43dc7c",
+      "utf8_bytes": 6435
+    },
+    {
+      "path": "skills/domain/voicestudio-local-audio/VERSION_HISTORY.yaml",
+      "sha256": "sha256:2cb7719ced51082cc26fd62ec69180d45e7d0123137047149182821e3a8b4f55",
+      "git_blob_sha": "6091611b86ad2eb5dfca1a3ffb1deeb2b1e505d8",
+      "utf8_bytes": 250
+    }
+  ]
+}

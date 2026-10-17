@@ -1,0 +1,23 @@
+source_id: DOMAIN_AGENT_REACH_PUBLIC_DATA_SOURCE_94F06C1
+repository: Panniantong/Agent-Reach
+source_url: https://github.com/Panniantong/Agent-Reach
+external_identifier: Panniantong/Agent-Reach:agent_reach/skill/SKILL.md
+external_version_or_commit: 94f06c1969dfc1834001269d79d3ad0972d9dee6
+upstream_package_version: 1.5.0
+last_checked_at: '2026-10-17'
+license_status: MIT_VERIFIED_FROM_PINNED_LICENSE_AND_REPOSITORY_METADATA
+license_url: https://github.com/Panniantong/Agent-Reach/blob/94f06c1969dfc1834001269d79d3ad0972d9dee6/LICENSE
+license_content_hash: sha256:e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402
+snapshots:
+- key: agent-reach-skill
+  source_url: https://github.com/Panniantong/Agent-Reach/blob/94f06c1969dfc1834001269d79d3ad0972d9dee6/agent_reach/skill/SKILL.md
+  git_blob_sha: 462f4c282c8644744510ba7f47e1f8eb7efde622
+  content_hash: sha256:0df9cd22ade17b77cc3698a14f1224c4aad9df5d533a1878dbe5df11b62f8377
+  snapshot_path: skills/domain/agent-reach-public-data/1.0.0/upstream/SKILL.md.txt
+snapshot_scope: Selected instruction or README and license files; not a full software distribution.
+snapshot_load_policy: EVIDENCE_ONLY_NOT_ACTIVE_SKILLS; snapshots use .txt suffix
+adapter_version: 1.0.0
+adapter_identity: DOMAIN_AGENT_REACH_PUBLIC_DATA
+adapter_status: AVAILABLE
+runtime_status: NOT_INSPECTED_NOT_INSTALLED_BY_THIS_TASK
+runtime_installed_or_executed_by_this_task: false

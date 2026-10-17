@@ -1,0 +1,107 @@
+{
+  "report_version": "1.0.0",
+  "date": "2026-10-17",
+  "status": "PREPUBLICATION_VALIDATION_PASS",
+  "acceptance": [
+    {
+      "id": "A01",
+      "status": "PASS"
+    },
+    {
+      "id": "A02",
+      "status": "PASS"
+    },
+    {
+      "id": "A03",
+      "status": "PASS"
+    },
+    {
+      "id": "A04",
+      "status": "PASS"
+    },
+    {
+      "id": "A05",
+      "status": "PASS"
+    },
+    {
+      "id": "A06",
+      "status": "NOT_RUN_PENDING_PUBLICATION"
+    }
+  ],
+  "skills": [
+    {
+      "name": "taste-ui-reference",
+      "official_quick_validate": "PASS",
+      "manifest_schema": "PASS",
+      "source_hashes": "PASS",
+      "review_fields": "PASS"
+    },
+    {
+      "name": "agent-reach-public-data",
+      "official_quick_validate": "PASS",
+      "manifest_schema": "PASS",
+      "source_hashes": "PASS",
+      "review_fields": "PASS"
+    },
+    {
+      "name": "mirofish-scenarios",
+      "official_quick_validate": "PASS",
+      "manifest_schema": "PASS",
+      "source_hashes": "PASS",
+      "review_fields": "PASS"
+    },
+    {
+      "name": "archify-reference-diagrams",
+      "official_quick_validate": "PASS",
+      "manifest_schema": "PASS",
+      "source_hashes": "PASS",
+      "review_fields": "PASS"
+    },
+    {
+      "name": "voicestudio-local-audio",
+      "official_quick_validate": "PASS",
+      "manifest_schema": "PASS",
+      "source_hashes": "PASS",
+      "review_fields": "PASS"
+    }
+  ],
+  "official_validator_sha256": "sha256:ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+  "manifest_schema_source": "ETlvein/AI-Building-Skills@v1.0.0/schemas/SKILL_MANIFEST.schema.json",
+  "validation_tools": {
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.25.1",
+    "location": "Isolated authoring validation target; not project dependencies"
+  },
+  "retention": "PASS_EXISTING_REGISTRY_ENTRIES_AND_GOVERNANCE_POLICY_FIELDS_PRESERVED",
+  "public_repository_safety": "PASS_SELECTED_TEXT_AND_PATH_BOUNDARIES",
+  "local_links": "PASS",
+  "candidate_runtime_tests": "NOT_RUN_NOT_PART_OF_LIBRARY_PUBLICATION_ACCEPTANCE",
+  "co_load_approval": "NONE_ALL_15_PAIRS_UNKNOWN",
+  "infrastructure_events": [
+    {
+      "event": "Local Python lacked PyYAML/jsonschema",
+      "classification": "VALIDATION_INFRASTRUCTURE",
+      "result": "RESOLVED_ISOLATED_DOWNLOADS_TARGET"
+    },
+    {
+      "event": "Default sandbox blocked initial validation-library download",
+      "classification": "VALIDATION_INFRASTRUCTURE_NOT_PRODUCT_FAILURE",
+      "result": "RESOLVED_AUTHORIZED_ESCALATION"
+    },
+    {
+      "event": "Initial builder transport JavaScript parse failed before execution",
+      "classification": "INVALID_AUTHORING_ATTEMPT_NO_ARTIFACT_MUTATION",
+      "result": "CORRECTED_BEFORE_FILE_GENERATION"
+    },
+    {
+      "event": "Official validator inherited GBK for UTF-8 Skill text",
+      "classification": "INVALID_VALIDATOR_INVOCATION_NOT_SKILL_FAILURE",
+      "result": "RERUN_WITH_PYTHON_UTF8_MODE"
+    },
+    {
+      "event": "Link validation preceded creation of its linked validation report",
+      "classification": "INVALID_VALIDATOR_ORDER_NOT_SKILL_FAILURE",
+      "result": "CHECK_KNOWN_REPORT_TARGET_AGAIN_AFTER_REPORT_CREATION"
+    }
+  ]
+}

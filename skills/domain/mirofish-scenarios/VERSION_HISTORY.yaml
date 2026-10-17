@@ -1,0 +1,8 @@
+skill_id: DOMAIN_MIROFISH_SCENARIOS
+versions:
+- version: 1.0.0
+  status: AVAILABLE
+  path: skills/domain/mirofish-scenarios/1.0.0/runtime
+  source_id: DOMAIN_MIROFISH_SCENARIOS_SOURCE_7657031
+  immutable: true
+  added_at: '2026-10-17'

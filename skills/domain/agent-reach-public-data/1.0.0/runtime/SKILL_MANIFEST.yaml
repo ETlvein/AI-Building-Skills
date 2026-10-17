@@ -1,0 +1,61 @@
+schema_version: 1
+skill:
+  id: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  name: agent-reach-public-data
+  version: 1.0.0
+  scope: DOMAIN
+  status: AVAILABLE
+  path: skills/domain/agent-reach-public-data/1.0.0/runtime
+  description: Fetch public web, social-platform, RSS or video-transcript material with an existing Agent Reach
+    installation when the task needs those channels. 用于公开资料抓取与来源记录，不负责发帖或私有账户数据采集。
+governance:
+  prompt_standard_repository: https://github.com/ETlvein/AI-Building-PromptStandard
+  prompt_standard_ref: v1.0.0
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+classification:
+  domain: public-data-retrieval
+  tags:
+  - public-data-retrieval
+  - governed-adapter
+  - on-demand
+source:
+  source_id: DOMAIN_AGENT_REACH_PUBLIC_DATA_SOURCE_94F06C1
+  source_type: MAINTAINER_REPOSITORY
+  source_url: https://github.com/Panniantong/Agent-Reach
+  external_identifier: Panniantong/Agent-Reach:agent_reach/skill/SKILL.md
+  external_version_or_commit: 94f06c1969dfc1834001269d79d3ad0972d9dee6
+  content_hash: sha256:0df9cd22ade17b77cc3698a14f1224c4aad9df5d533a1878dbe5df11b62f8377
+resolution:
+  registry_discoverable: true
+  load_policy: ON_DEMAND
+dependencies:
+  tools:
+  - Agent Reach 1.5.0 (optional runtime; installed CLI required for actual Agent Reach retrieval)
+  references:
+  - references/OPERATING_NOTES.md
+  skills: []
+composition:
+  mode: STANDALONE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
+compatibility:
+  environments:
+  - Agent with Markdown/file access; optional tool-specific runtime
+  minimum_prompt_standard: v1.0.0
+publication:
+  public_safe: true
+  published: true
+updated_date: '2026-10-17'

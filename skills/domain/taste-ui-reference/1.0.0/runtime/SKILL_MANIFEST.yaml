@@ -1,0 +1,60 @@
+schema_version: 1
+skill:
+  id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  name: taste-ui-reference
+  version: 1.0.0
+  scope: DOMAIN
+  status: AVAILABLE
+  path: skills/domain/taste-ui-reference/1.0.0/runtime
+  description: Use Taste Skill as an optional reference for UI layout, typography, spacing and visual review; distinguish
+    product workbenches from public marketing pages. 用于界面设计参考，不覆盖既有设计系统和工作区约束。
+governance:
+  prompt_standard_repository: https://github.com/ETlvein/AI-Building-PromptStandard
+  prompt_standard_ref: v1.0.0
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+classification:
+  domain: frontend-ui
+  tags:
+  - frontend-ui
+  - governed-adapter
+  - on-demand
+source:
+  source_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX_SOURCE_F624F37
+  source_type: MAINTAINER_REPOSITORY
+  source_url: https://github.com/Leonxlnx/taste-skill
+  external_identifier: Leonxlnx/taste-skill:skills/taste-skill/SKILL.md
+  external_version_or_commit: f624f37a8c650b9cc550253104925efe4c8de246
+  content_hash: sha256:ee847084e58f5a81a46120912be9cd15f083570a6ca8f3d1a30372a720633043
+resolution:
+  registry_discoverable: true
+  load_policy: ON_DEMAND
+dependencies:
+  tools: []
+  references:
+  - references/OPERATING_NOTES.md
+  skills: []
+composition:
+  mode: STANDALONE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
+compatibility:
+  environments:
+  - Agent with Markdown/file access; optional tool-specific runtime
+  minimum_prompt_standard: v1.0.0
+publication:
+  public_safe: true
+  published: true
+updated_date: '2026-10-17'

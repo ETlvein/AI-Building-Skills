@@ -1,0 +1,28 @@
+source_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX_SOURCE_F624F37
+repository: Leonxlnx/taste-skill
+source_url: https://github.com/Leonxlnx/taste-skill
+external_identifier: Leonxlnx/taste-skill:skills/taste-skill/SKILL.md
+external_version_or_commit: f624f37a8c650b9cc550253104925efe4c8de246
+upstream_package_version: COMMIT_PINNED
+last_checked_at: '2026-10-17'
+license_status: MIT_VERIFIED_FROM_PINNED_LICENSE_AND_REPOSITORY_METADATA
+license_url: https://github.com/Leonxlnx/taste-skill/blob/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE
+license_content_hash: sha256:4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df
+snapshots:
+- key: taste-skill
+  source_url: https://github.com/Leonxlnx/taste-skill/blob/f624f37a8c650b9cc550253104925efe4c8de246/skills/taste-skill/SKILL.md
+  git_blob_sha: 91d114a9d8d1e9999ff8bdc7c6fc2303a49af754
+  content_hash: sha256:ee847084e58f5a81a46120912be9cd15f083570a6ca8f3d1a30372a720633043
+  snapshot_path: skills/domain/taste-ui-reference/1.0.0/upstream/taste-skill/SKILL.md.txt
+- key: minimalist-skill
+  source_url: https://github.com/Leonxlnx/taste-skill/blob/f624f37a8c650b9cc550253104925efe4c8de246/skills/minimalist-skill/SKILL.md
+  git_blob_sha: d319ad9f49dfec1d44622effdad22d99e53f42cb
+  content_hash: sha256:769ab38eed137bb22c7c09ee08ebb628e9acf3ad37f138d43f772e3af83933e4
+  snapshot_path: skills/domain/taste-ui-reference/1.0.0/upstream/minimalist-skill/SKILL.md.txt
+snapshot_scope: Selected instruction or README and license files; not a full software distribution.
+snapshot_load_policy: EVIDENCE_ONLY_NOT_ACTIVE_SKILLS; snapshots use .txt suffix
+adapter_version: 1.0.0
+adapter_identity: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+adapter_status: AVAILABLE
+runtime_status: REFERENCE_MODE_READY;UPSTREAM_RUNTIME_NOT_INSTALLED
+runtime_installed_or_executed_by_this_task: false

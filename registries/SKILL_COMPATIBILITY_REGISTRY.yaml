@@ -131,8 +131,338 @@ rules:
   - "The Agent Execution Plane must not independently add Skills that were not authorized by the AI Control Plane."
   - "Manifest and Compatibility Registry disagreement must result in BLOCK until reconciled."
 
-relations: []
+relations:
+- skill_a: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  version_a: 1.0.0
+  skill_b: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  version_a: 1.0.0
+  skill_b: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  version_a: 1.0.0
+  skill_b: DOMAIN_MIROFISH_SCENARIOS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  version_a: 1.0.0
+  skill_b: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: GLOBAL_SYSTEMATIC_DEBUGGING_OBRA
+  version_a: 1.0.0
+  skill_b: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  version_a: 1.0.0
+  skill_b: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  version_a: 1.0.0
+  skill_b: DOMAIN_MIROFISH_SCENARIOS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  version_a: 1.0.0
+  skill_b: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  version_a: 1.0.0
+  skill_b: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  version_a: 1.0.0
+  skill_b: DOMAIN_MIROFISH_SCENARIOS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  version_a: 1.0.0
+  skill_b: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  version_a: 1.0.0
+  skill_b: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_MIROFISH_SCENARIOS
+  version_a: 1.0.0
+  skill_b: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_MIROFISH_SCENARIOS
+  version_a: 1.0.0
+  skill_b: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
+- skill_a: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  version_a: 1.0.0
+  skill_b: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  version_b: 1.0.0
+  evaluation_result: UNKNOWN
+  co_load_allowed: false
+  dimensions:
+    INPUT_CONTRACT: UNKNOWN
+    OUTPUT_CONTRACT: UNKNOWN
+    TOOL_REQUIREMENTS: UNKNOWN
+    FILE_MUTATION_SCOPE: UNKNOWN
+    EXECUTION_ORDER: UNKNOWN
+    TECHNOLOGY_STACK: UNKNOWN
+    VERSION_REQUIREMENTS: UNKNOWN
+    PERMISSION_REQUIREMENTS: UNKNOWN
+    SECURITY_RULES: UNKNOWN
+    PROJECT_GOVERNANCE: UNKNOWN
+    GIT_WORKFLOW: UNKNOWN
+    DEPENDENCY_REQUIREMENTS: UNKNOWN
+  reason: No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters
+    only.
+  evaluated_at: '2026-10-17'
 
 exclusive_groups: []
 
-updated_date: "2026-09-19"
+updated_date: "2026-10-17"

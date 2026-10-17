@@ -1,0 +1,514 @@
+{
+  "audit_id": "FIVE_REQUESTED_TOOLS_ADMISSION_2026_10_17",
+  "scope": "PUBLIC_SKILL_LIBRARY_ONLY",
+  "governance": {
+    "prompt_standard_ref": "v1.0.0",
+    "prompt_standard_blob_sha": "1bae331a6463c40b227a0a1cbe949b122beb26da",
+    "skill_governance_ref": "v1.0.0",
+    "skill_governance_blob_sha": "abb9c0a977a03092686062c0216daa1f992c6aca",
+    "discovery_protocol_blob_sha": "9a21e54b71b6ffbbe00c61902ef383b1923d648c"
+  },
+  "online_discovery": {
+    "status": "COMPLETED",
+    "searched_at": "2026-10-17",
+    "queries": [
+      "\"taste-skill\" GitHub",
+      "\"agent-reach\" GitHub",
+      "\"mirofish\" GitHub multi agent",
+      "\"archify\" github architecture diagram",
+      "\"VoiceStudio\" \"local\" \"github\"",
+      "site:github.com/openai/skills \"skill-creator\" SKILL.md"
+    ],
+    "canonical_sources": [
+      {
+        "repository": "Leonxlnx/taste-skill",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "date": "2026-10-14T15:00:49Z"
+      },
+      {
+        "repository": "Panniantong/Agent-Reach",
+        "commit": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+        "date": "2026-10-07T17:17:26Z"
+      },
+      {
+        "repository": "666ghj/MiroFish",
+        "commit": "7657031ac01184afe2cb220f5ee3545573b5e843",
+        "date": "2026-10-01T18:20:36Z"
+      },
+      {
+        "repository": "tt-a1i/archify",
+        "commit": "88d1ae4498b6a1df610badf690c5406882622d15",
+        "date": "2026-10-17T03:14:31Z"
+      },
+      {
+        "repository": "debpalash/VoiceStudio",
+        "commit": "f47221a1f0af89df27c34747471daa30391a9487",
+        "date": "2026-10-16T09:02:48Z"
+      }
+    ]
+  },
+  "local_registry": {
+    "status": "COMPLETED",
+    "git_published_baseline": "7cd168e5262faab133ab7a870b7078251e81e3c7",
+    "existing_entries": [
+      "GLOBAL_SYSTEMATIC_DEBUGGING_OBRA"
+    ],
+    "local_authoring_registry_read": true,
+    "local_and_remote_inventory_agreed": true,
+    "comparison": "Five new identities; existing systematic-debugging retained without merge or overwrite."
+  },
+  "authoring_final_skill_set": [
+    {
+      "skill_id": "BUNDLED_SKILL_CREATOR",
+      "exact_version": "sha256:cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288",
+      "selection_reason": "Create scoped governed companion/reference adapters",
+      "source_status": "BUNDLED_OPENAI_SOURCE_REVIEWED",
+      "compatibility_status": "STANDALONE_SINGLE_SKILL",
+      "dependencies": "Python and isolated validation libraries",
+      "constraints": "Public library authoring only; no candidate runtime or project mutation."
+    }
+  ],
+  "composition_gate": {
+    "authoring_status": "NOT_REQUIRED_SINGLE_SKILL",
+    "future_adapters": "STANDALONE_ONLY",
+    "pairwise_matrix_status": "UNKNOWN_NO_COLOAD",
+    "required_dimensions": [
+      "INPUT_CONTRACT",
+      "OUTPUT_CONTRACT",
+      "TOOL_REQUIREMENTS",
+      "FILE_MUTATION_SCOPE",
+      "EXECUTION_ORDER",
+      "TECHNOLOGY_STACK",
+      "VERSION_REQUIREMENTS",
+      "PERMISSION_REQUIREMENTS",
+      "SECURITY_RULES",
+      "PROJECT_GOVERNANCE",
+      "GIT_WORKFLOW",
+      "DEPENDENCY_REQUIREMENTS"
+    ],
+    "pairs_evaluated": 15
+  },
+  "source_reviews": [
+    {
+      "skill_id": "DOMAIN_TASTE_UI_REFERENCE_LEONXLNX",
+      "path": "skills/domain/taste-ui-reference/1.0.0/SOURCE_REVIEW.json"
+    },
+    {
+      "skill_id": "DOMAIN_AGENT_REACH_PUBLIC_DATA",
+      "path": "skills/domain/agent-reach-public-data/1.0.0/SOURCE_REVIEW.json"
+    },
+    {
+      "skill_id": "DOMAIN_MIROFISH_SCENARIOS",
+      "path": "skills/domain/mirofish-scenarios/1.0.0/SOURCE_REVIEW.json"
+    },
+    {
+      "skill_id": "DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS",
+      "path": "skills/domain/archify-reference-diagrams/1.0.0/SOURCE_REVIEW.json"
+    },
+    {
+      "skill_id": "DOMAIN_VOICESTUDIO_LOCAL_AUDIO",
+      "path": "skills/domain/voicestudio-local-audio/1.0.0/SOURCE_REVIEW.json"
+    }
+  ],
+  "pairwise_evaluations": [
+    {
+      "skill_a": "GLOBAL_SYSTEMATIC_DEBUGGING_OBRA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_TASTE_UI_REFERENCE_LEONXLNX",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "GLOBAL_SYSTEMATIC_DEBUGGING_OBRA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_AGENT_REACH_PUBLIC_DATA",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "GLOBAL_SYSTEMATIC_DEBUGGING_OBRA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_MIROFISH_SCENARIOS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "GLOBAL_SYSTEMATIC_DEBUGGING_OBRA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "GLOBAL_SYSTEMATIC_DEBUGGING_OBRA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_VOICESTUDIO_LOCAL_AUDIO",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_TASTE_UI_REFERENCE_LEONXLNX",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_AGENT_REACH_PUBLIC_DATA",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_TASTE_UI_REFERENCE_LEONXLNX",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_MIROFISH_SCENARIOS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_TASTE_UI_REFERENCE_LEONXLNX",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_TASTE_UI_REFERENCE_LEONXLNX",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_VOICESTUDIO_LOCAL_AUDIO",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_AGENT_REACH_PUBLIC_DATA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_MIROFISH_SCENARIOS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_AGENT_REACH_PUBLIC_DATA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_AGENT_REACH_PUBLIC_DATA",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_VOICESTUDIO_LOCAL_AUDIO",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_MIROFISH_SCENARIOS",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_MIROFISH_SCENARIOS",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_VOICESTUDIO_LOCAL_AUDIO",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    },
+    {
+      "skill_a": "DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS",
+      "version_a": "1.0.0",
+      "skill_b": "DOMAIN_VOICESTUDIO_LOCAL_AUDIO",
+      "version_b": "1.0.0",
+      "evaluation_result": "UNKNOWN",
+      "co_load_allowed": false,
+      "dimensions": {
+        "INPUT_CONTRACT": "UNKNOWN",
+        "OUTPUT_CONTRACT": "UNKNOWN",
+        "TOOL_REQUIREMENTS": "UNKNOWN",
+        "FILE_MUTATION_SCOPE": "UNKNOWN",
+        "EXECUTION_ORDER": "UNKNOWN",
+        "TECHNOLOGY_STACK": "UNKNOWN",
+        "VERSION_REQUIREMENTS": "UNKNOWN",
+        "PERMISSION_REQUIREMENTS": "UNKNOWN",
+        "SECURITY_RULES": "UNKNOWN",
+        "PROJECT_GOVERNANCE": "UNKNOWN",
+        "GIT_WORKFLOW": "UNKNOWN",
+        "DEPENDENCY_REQUIREMENTS": "UNKNOWN"
+      },
+      "reason": "No joint task, environment, file scopes, order or resolved runtime dependencies supplied. Standalone adapters only.",
+      "evaluated_at": "2026-10-17"
+    }
+  ],
+  "retention": {
+    "deleted": false,
+    "merged": false,
+    "existing_versions_overwritten": false,
+    "frozen_governance_modified": false
+  },
+  "execution": {
+    "candidate_tools_installed": false,
+    "candidate_tools_run": false,
+    "browser_run": false,
+    "new_agent_simulation_run": false,
+    "clinical_validation": "NOT_APPLICABLE_NO_CLINICAL_CLAIM"
+  },
+  "acceptance_denominator": [
+    {
+      "id": "A01",
+      "requirement": "Verify five upstream identities and pinned selected source/license blobs and hashes."
+    },
+    {
+      "id": "A02",
+      "requirement": "Read remote/local registry; preserve existing records and governance policy fields."
+    },
+    {
+      "id": "A03",
+      "requirement": "Author five independent versioned adapters with entrypoints, manifests, sources and license evidence."
+    },
+    {
+      "id": "A04",
+      "requirement": "Validate frontmatter, Manifest schema, local links, retention and public-safe contents."
+    },
+    {
+      "id": "A05",
+      "requirement": "Record runtime limitations and UNKNOWN pairwise compatibility without execution claims."
+    },
+    {
+      "id": "A06",
+      "requirement": "Commit/publish to GitHub and independently read back all changed files and protected tree identities."
+    }
+  ]
+}
