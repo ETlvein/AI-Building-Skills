@@ -1,0 +1,8 @@
+skill_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+versions:
+- version: 1.0.0
+  status: AVAILABLE
+  path: skills/domain/taste-ui-reference/1.0.0/runtime
+  source_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX_SOURCE_F624F37
+  immutable: true
+  added_at: '2026-10-17'

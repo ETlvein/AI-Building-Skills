@@ -41,6 +41,46 @@ public_repository_policy:
   prohibit_private_data: true
   prohibit_unauthorized_business_secrets: true
 
-references: []
+references:
+- reference_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX_UPSTREAM
+  source_url: https://github.com/Leonxlnx/taste-skill/tree/f624f37a8c650b9cc550253104925efe4c8de246
+  source_type: OPEN_SOURCE_PROJECT
+  decision: ADAPT
+  skill_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  exact_commit: f624f37a8c650b9cc550253104925efe4c8de246
+  last_checked_at: '2026-10-17'
+  review_path: skills/domain/taste-ui-reference/1.0.0/SOURCE_REVIEW.json
+- reference_id: DOMAIN_AGENT_REACH_PUBLIC_DATA_UPSTREAM
+  source_url: https://github.com/Panniantong/Agent-Reach/tree/94f06c1969dfc1834001269d79d3ad0972d9dee6
+  source_type: OPEN_SOURCE_PROJECT
+  decision: ADAPT
+  skill_id: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  exact_commit: 94f06c1969dfc1834001269d79d3ad0972d9dee6
+  last_checked_at: '2026-10-17'
+  review_path: skills/domain/agent-reach-public-data/1.0.0/SOURCE_REVIEW.json
+- reference_id: DOMAIN_MIROFISH_SCENARIOS_UPSTREAM
+  source_url: https://github.com/666ghj/MiroFish/tree/7657031ac01184afe2cb220f5ee3545573b5e843
+  source_type: OPEN_SOURCE_PROJECT
+  decision: REFERENCE
+  skill_id: DOMAIN_MIROFISH_SCENARIOS
+  exact_commit: 7657031ac01184afe2cb220f5ee3545573b5e843
+  last_checked_at: '2026-10-17'
+  review_path: skills/domain/mirofish-scenarios/1.0.0/SOURCE_REVIEW.json
+- reference_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS_UPSTREAM
+  source_url: https://github.com/tt-a1i/archify/tree/88d1ae4498b6a1df610badf690c5406882622d15
+  source_type: OPEN_SOURCE_PROJECT
+  decision: ADAPT
+  skill_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  exact_commit: 88d1ae4498b6a1df610badf690c5406882622d15
+  last_checked_at: '2026-10-17'
+  review_path: skills/domain/archify-reference-diagrams/1.0.0/SOURCE_REVIEW.json
+- reference_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO_UPSTREAM
+  source_url: https://github.com/debpalash/VoiceStudio/tree/f47221a1f0af89df27c34747471daa30391a9487
+  source_type: OPEN_SOURCE_PROJECT
+  decision: ADAPT
+  skill_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  exact_commit: f47221a1f0af89df27c34747471daa30391a9487
+  last_checked_at: '2026-10-17'
+  review_path: skills/domain/voicestudio-local-audio/1.0.0/SOURCE_REVIEW.json
 
-updated_date: "2026-09-19"
+updated_date: "2026-10-17"

@@ -1,0 +1,8 @@
+skill_id: DOMAIN_AGENT_REACH_PUBLIC_DATA
+versions:
+- version: 1.0.0
+  status: AVAILABLE
+  path: skills/domain/agent-reach-public-data/1.0.0/runtime
+  source_id: DOMAIN_AGENT_REACH_PUBLIC_DATA_SOURCE_94F06C1
+  immutable: true
+  added_at: '2026-10-17'

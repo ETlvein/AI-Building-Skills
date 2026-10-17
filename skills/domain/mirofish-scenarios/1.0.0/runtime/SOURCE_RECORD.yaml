@@ -1,0 +1,23 @@
+source_id: DOMAIN_MIROFISH_SCENARIOS_SOURCE_7657031
+repository: 666ghj/MiroFish
+source_url: https://github.com/666ghj/MiroFish
+external_identifier: 666ghj/MiroFish:README.md
+external_version_or_commit: 7657031ac01184afe2cb220f5ee3545573b5e843
+upstream_package_version: COMMIT_PINNED
+last_checked_at: '2026-10-17'
+license_status: AGPL-3.0_VERIFIED_FROM_PINNED_LICENSE_AND_REPOSITORY_METADATA
+license_url: https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/LICENSE
+license_content_hash: sha256:8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef
+snapshots:
+- key: mirofish-readme
+  source_url: https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md
+  git_blob_sha: 5e8071d0a53ad17b7ecf694b159498e1e872a1ae
+  content_hash: sha256:5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034
+  snapshot_path: skills/domain/mirofish-scenarios/1.0.0/upstream/README.md.txt
+snapshot_scope: Selected instruction or README and license files; not a full software distribution.
+snapshot_load_policy: EVIDENCE_ONLY_NOT_ACTIVE_SKILLS; snapshots use .txt suffix
+adapter_version: 1.0.0
+adapter_identity: DOMAIN_MIROFISH_SCENARIOS
+adapter_status: AVAILABLE
+runtime_status: PLAN_MODE_READY;SIMULATOR_NOT_INSTALLED_OR_RUN
+runtime_installed_or_executed_by_this_task: false

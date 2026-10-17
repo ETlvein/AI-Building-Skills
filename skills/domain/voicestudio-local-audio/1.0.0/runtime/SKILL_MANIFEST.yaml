@@ -1,0 +1,61 @@
+schema_version: 1
+skill:
+  id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  name: voicestudio-local-audio
+  version: 1.0.0
+  scope: DOMAIN
+  status: AVAILABLE
+  path: skills/domain/voicestudio-local-audio/1.0.0/runtime
+  description: Use an existing local VoiceStudio backend for speech synthesis or transcription, checking live voices,
+    engines and output files. 用于本地语音、转写和旁白；安装、下载模型及远端处理按任务另行授权。
+governance:
+  prompt_standard_repository: https://github.com/ETlvein/AI-Building-PromptStandard
+  prompt_standard_ref: v1.0.0
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+classification:
+  domain: local-audio
+  tags:
+  - local-audio
+  - governed-adapter
+  - on-demand
+source:
+  source_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO_SOURCE_F47221A
+  source_type: MAINTAINER_REPOSITORY
+  source_url: https://github.com/debpalash/VoiceStudio
+  external_identifier: debpalash/VoiceStudio:skills/voicestudio/SKILL.md
+  external_version_or_commit: f47221a1f0af89df27c34747471daa30391a9487
+  content_hash: sha256:619b1c90992d453f23a402f4847d86bcd33eb6621d3182056ef2c9ec34cd0d1e
+resolution:
+  registry_discoverable: true
+  load_policy: ON_DEMAND
+dependencies:
+  tools:
+  - Running local VoiceStudio backend and installed suitable TTS/ASR models
+  references:
+  - references/OPERATING_NOTES.md
+  skills: []
+composition:
+  mode: STANDALONE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
+compatibility:
+  environments:
+  - Agent with Markdown/file access; optional tool-specific runtime
+  minimum_prompt_standard: v1.0.0
+publication:
+  public_safe: true
+  published: true
+updated_date: '2026-10-17'

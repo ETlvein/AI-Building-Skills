@@ -105,4 +105,70 @@ skills:
     added_at: '2026-10-09'
   created_at: '2026-10-09'
 
-updated_date: "2026-10-09"
+- skill_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX
+  name: taste-ui-reference
+  scope: DOMAIN
+  current_version: 1.0.0
+  versions:
+  - version: 1.0.0
+    status: AVAILABLE
+    path: skills/domain/taste-ui-reference/1.0.0/runtime
+    source_id: DOMAIN_TASTE_UI_REFERENCE_LEONXLNX_SOURCE_F624F37
+    manifest_path: skills/domain/taste-ui-reference/1.0.0/runtime/SKILL_MANIFEST.yaml
+    content_hash: sha256:79f7775ab6baf832a89c7a2bd77b3338a1d2c690d7c879ebbdb5e59cc2c89fe2
+    added_at: '2026-10-17'
+  created_at: '2026-10-17'
+- skill_id: DOMAIN_AGENT_REACH_PUBLIC_DATA
+  name: agent-reach-public-data
+  scope: DOMAIN
+  current_version: 1.0.0
+  versions:
+  - version: 1.0.0
+    status: AVAILABLE
+    path: skills/domain/agent-reach-public-data/1.0.0/runtime
+    source_id: DOMAIN_AGENT_REACH_PUBLIC_DATA_SOURCE_94F06C1
+    manifest_path: skills/domain/agent-reach-public-data/1.0.0/runtime/SKILL_MANIFEST.yaml
+    content_hash: sha256:750556ab4751bd06135da11944d34b0dc9f4f82cfe693904b33574306a9f8588
+    added_at: '2026-10-17'
+  created_at: '2026-10-17'
+- skill_id: DOMAIN_MIROFISH_SCENARIOS
+  name: mirofish-scenarios
+  scope: DOMAIN
+  current_version: 1.0.0
+  versions:
+  - version: 1.0.0
+    status: AVAILABLE
+    path: skills/domain/mirofish-scenarios/1.0.0/runtime
+    source_id: DOMAIN_MIROFISH_SCENARIOS_SOURCE_7657031
+    manifest_path: skills/domain/mirofish-scenarios/1.0.0/runtime/SKILL_MANIFEST.yaml
+    content_hash: sha256:96295286d1f7d77386eb8ea0f3226ac2711e9786f16ad2b6bc4187bab2ef3bea
+    added_at: '2026-10-17'
+  created_at: '2026-10-17'
+- skill_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  name: archify-reference-diagrams
+  scope: DOMAIN
+  current_version: 1.0.0
+  versions:
+  - version: 1.0.0
+    status: AVAILABLE
+    path: skills/domain/archify-reference-diagrams/1.0.0/runtime
+    source_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS_SOURCE_88D1AE4
+    manifest_path: skills/domain/archify-reference-diagrams/1.0.0/runtime/SKILL_MANIFEST.yaml
+    content_hash: sha256:a6d51a5102996a3c40c0f6651914337a23682bae78ec3757fd2016ca30e248dc
+    added_at: '2026-10-17'
+  created_at: '2026-10-17'
+- skill_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+  name: voicestudio-local-audio
+  scope: DOMAIN
+  current_version: 1.0.0
+  versions:
+  - version: 1.0.0
+    status: AVAILABLE
+    path: skills/domain/voicestudio-local-audio/1.0.0/runtime
+    source_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO_SOURCE_F47221A
+    manifest_path: skills/domain/voicestudio-local-audio/1.0.0/runtime/SKILL_MANIFEST.yaml
+    content_hash: sha256:756d7156151db86e740079e3dc76de09e2e7e52348797970d8c5d476a5b2510f
+    added_at: '2026-10-17'
+  created_at: '2026-10-17'
+
+updated_date: "2026-10-17"

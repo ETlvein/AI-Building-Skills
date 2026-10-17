@@ -1,0 +1,23 @@
+source_id: DOMAIN_VOICESTUDIO_LOCAL_AUDIO_SOURCE_F47221A
+repository: debpalash/VoiceStudio
+source_url: https://github.com/debpalash/VoiceStudio
+external_identifier: debpalash/VoiceStudio:skills/voicestudio/SKILL.md
+external_version_or_commit: f47221a1f0af89df27c34747471daa30391a9487
+upstream_package_version: COMMIT_PINNED
+last_checked_at: '2026-10-17'
+license_status: AGPL-3.0_VERIFIED_FROM_PINNED_LICENSE_AND_REPOSITORY_METADATA
+license_url: https://github.com/debpalash/VoiceStudio/blob/f47221a1f0af89df27c34747471daa30391a9487/LICENSE
+license_content_hash: sha256:0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0
+snapshots:
+- key: voicestudio-skill
+  source_url: https://github.com/debpalash/VoiceStudio/blob/f47221a1f0af89df27c34747471daa30391a9487/skills/voicestudio/SKILL.md
+  git_blob_sha: a612d3fd67d1f917e48425f47cde556c7c43dc7c
+  content_hash: sha256:619b1c90992d453f23a402f4847d86bcd33eb6621d3182056ef2c9ec34cd0d1e
+  snapshot_path: skills/domain/voicestudio-local-audio/1.0.0/upstream/SKILL.md.txt
+snapshot_scope: Selected instruction or README and license files; not a full software distribution.
+snapshot_load_policy: EVIDENCE_ONLY_NOT_ACTIVE_SKILLS; snapshots use .txt suffix
+adapter_version: 1.0.0
+adapter_identity: DOMAIN_VOICESTUDIO_LOCAL_AUDIO
+adapter_status: AVAILABLE
+runtime_status: BACKEND_AND_MODELS_NOT_INSPECTED_OR_RUN
+runtime_installed_or_executed_by_this_task: false

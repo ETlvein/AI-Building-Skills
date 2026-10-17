@@ -1,0 +1,60 @@
+schema_version: 1
+skill:
+  id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+  name: archify-reference-diagrams
+  version: 1.0.0
+  scope: DOMAIN
+  status: AVAILABLE
+  path: skills/domain/archify-reference-diagrams/1.0.0/runtime
+  description: Create source-grounded architecture or workflow diagrams using Archify as visual and structural inspiration,
+    or prepare a native Archify handoff. 用于架构图灵感与只读可视化，不授权改变架构。
+governance:
+  prompt_standard_repository: https://github.com/ETlvein/AI-Building-PromptStandard
+  prompt_standard_ref: v1.0.0
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+classification:
+  domain: architecture-visualization
+  tags:
+  - architecture-visualization
+  - governed-adapter
+  - on-demand
+source:
+  source_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS_SOURCE_88D1AE4
+  source_type: MAINTAINER_REPOSITORY
+  source_url: https://github.com/tt-a1i/archify
+  external_identifier: tt-a1i/archify:archify/SKILL.md
+  external_version_or_commit: 88d1ae4498b6a1df610badf690c5406882622d15
+  content_hash: sha256:55c126d68c1fbef114ccdef8dd0e7f046419dc9203ac7f6dab1728f6bab3ca71
+resolution:
+  registry_discoverable: true
+  load_policy: ON_DEMAND
+dependencies:
+  tools: []
+  references:
+  - references/OPERATING_NOTES.md
+  skills: []
+composition:
+  mode: STANDALONE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
+compatibility:
+  environments:
+  - Agent with Markdown/file access; optional tool-specific runtime
+  minimum_prompt_standard: v1.0.0
+publication:
+  public_safe: true
+  published: true
+updated_date: '2026-10-17'

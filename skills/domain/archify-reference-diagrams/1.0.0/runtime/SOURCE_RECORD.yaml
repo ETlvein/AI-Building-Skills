@@ -1,0 +1,23 @@
+source_id: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS_SOURCE_88D1AE4
+repository: tt-a1i/archify
+source_url: https://github.com/tt-a1i/archify
+external_identifier: tt-a1i/archify:archify/SKILL.md
+external_version_or_commit: 88d1ae4498b6a1df610badf690c5406882622d15
+upstream_package_version: 3.1.0
+last_checked_at: '2026-10-17'
+license_status: MIT_VERIFIED_FROM_PINNED_LICENSE_AND_REPOSITORY_METADATA
+license_url: https://github.com/tt-a1i/archify/blob/88d1ae4498b6a1df610badf690c5406882622d15/LICENSE
+license_content_hash: sha256:b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706
+snapshots:
+- key: archify-skill
+  source_url: https://github.com/tt-a1i/archify/blob/88d1ae4498b6a1df610badf690c5406882622d15/archify/SKILL.md
+  git_blob_sha: 278cbcda543b48440a6e2ea817fc97a01fd722d0
+  content_hash: sha256:55c126d68c1fbef114ccdef8dd0e7f046419dc9203ac7f6dab1728f6bab3ca71
+  snapshot_path: skills/domain/archify-reference-diagrams/1.0.0/upstream/SKILL.md.txt
+snapshot_scope: Selected instruction or README and license files; not a full software distribution.
+snapshot_load_policy: EVIDENCE_ONLY_NOT_ACTIVE_SKILLS; snapshots use .txt suffix
+adapter_version: 1.0.0
+adapter_identity: DOMAIN_ARCHIFY_REFERENCE_DIAGRAMS
+adapter_status: AVAILABLE
+runtime_status: REFERENCE_MODE_READY;UPSTREAM_RENDERER_NOT_INSTALLED
+runtime_installed_or_executed_by_this_task: false

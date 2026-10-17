@@ -1,0 +1,61 @@
+schema_version: 1
+skill:
+  id: DOMAIN_MIROFISH_SCENARIOS
+  name: mirofish-scenarios
+  version: 1.0.0
+  scope: DOMAIN
+  status: AVAILABLE
+  path: skills/domain/mirofish-scenarios/1.0.0/runtime
+  description: Prepare reproducible MiroFish scenario experiments and review runs from an already configured simulator.
+    用于多角色场景假设、实验设计和结果审阅；没有实际运行时仅交付推演方案。
+governance:
+  prompt_standard_repository: https://github.com/ETlvein/AI-Building-PromptStandard
+  prompt_standard_ref: v1.0.0
+  prompt_standard_id: PROMPT_STANDARD_V1.0
+classification:
+  domain: multi-agent-simulation
+  tags:
+  - multi-agent-simulation
+  - governed-adapter
+  - on-demand
+source:
+  source_id: DOMAIN_MIROFISH_SCENARIOS_SOURCE_7657031
+  source_type: MAINTAINER_REPOSITORY
+  source_url: https://github.com/666ghj/MiroFish
+  external_identifier: 666ghj/MiroFish:README.md
+  external_version_or_commit: 7657031ac01184afe2cb220f5ee3545573b5e843
+  content_hash: sha256:5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034
+resolution:
+  registry_discoverable: true
+  load_policy: ON_DEMAND
+dependencies:
+  tools:
+  - 'Optional MiroFish runtime: Node.js 18+, Python 3.11-3.12, uv, configured LLM and Zep services'
+  references:
+  - references/OPERATING_NOTES.md
+  skills: []
+composition:
+  mode: STANDALONE
+  conflicts_with: []
+  similar_to: []
+  alternative_to: []
+  newer_than: []
+  exclusive_groups: []
+  precedence: NORMAL
+  unknown_compatibility_action: BLOCK_UNTIL_EVALUATED
+lifecycle:
+  permanent_retention: true
+  deletion_allowed: false
+  merge_allowed: false
+  historical_version_overwrite_allowed: false
+  identity_preserved: true
+  independent_directory_required: true
+  independent_version_history_required: true
+compatibility:
+  environments:
+  - Agent with Markdown/file access; optional tool-specific runtime
+  minimum_prompt_standard: v1.0.0
+publication:
+  public_safe: true
+  published: true
+updated_date: '2026-10-17'

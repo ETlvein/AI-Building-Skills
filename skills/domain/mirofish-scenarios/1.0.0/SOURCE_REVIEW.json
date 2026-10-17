@@ -1,0 +1,34 @@
+{
+  "skill_id": "DOMAIN_MIROFISH_SCENARIOS",
+  "adapter_version": "1.0.0",
+  "source_record": "skills/domain/mirofish-scenarios/1.0.0/runtime/SOURCE_RECORD.yaml",
+  "decision": "REFERENCE",
+  "admission": "APPROVED_GOVERNED_DOCUMENT_ADAPTER_ONLY",
+  "review_scope": "Selected instruction/README/license text and metadata; no exhaustive source-code/security audit.",
+  "required_checks": {
+    "SOURCE_IDENTITY": "PASS_CANONICAL_NONFORK_REPOSITORY_METADATA",
+    "SOURCE_URL": "PASS_PINNED_PRIMARY_SOURCE",
+    "AUTHOR_OR_ORGANIZATION": "PASS_PUBLIC_MAINTAINER",
+    "LICENSE_STATUS": "PASS_PINNED_LICENSE_RETAINED",
+    "EXTERNAL_VERSION_OR_COMMIT": "PASS_FULL_COMMIT_PIN",
+    "CONTENT_HASH": "PASS_GIT_BLOB_AND_SHA256",
+    "LAST_UPDATE_TIME": "RECORDED_2026-10-01T18:20:36Z",
+    "MALICIOUS_INSTRUCTION_REVIEW": "PASS_SELECTED_TEXT_ADAPTED_WITH_RECORDED_CONSTRAINTS",
+    "CREDENTIAL_AND_SECRET_REVIEW": "PASS_SELECTED_PUBLIC_TEXT_NO_ACTUAL_SECRETS",
+    "PRIVATE_DATA_REVIEW": "PASS_NO_PROJECT_OR_PRIVATE_INPUT_INCLUDED",
+    "LOCAL_DUPLICATE_COMPARISON": "PASS_NEW_IDENTITY_EXISTING_DEBUGGING_PRESERVED",
+    "LOCAL_SIMILARITY_COMPARISON": "PASS_DISTINCT_PURPOSE_NO_MERGE",
+    "COMPATIBILITY_IMPACT": "STANDALONE_ONLY_COLOAD_UNKNOWN",
+    "PROJECT_RELEVANCE": "PASS_DOMAIN_REUSABLE_TASK_AUTHORITY_REQUIRED",
+    "SOURCE_TYPE": "PASS_MAINTAINER_REPOSITORY"
+  },
+  "findings": [
+    "Upstream is an application, not a portable SKILL.md package.",
+    "Independent companion skill provides experiment planning and evidence review; it is not the simulator.",
+    "Pinned upstream defaults require LLM and Zep Cloud; no fully local operation is claimed.",
+    "No simulator run, agent population, upload, budget consumption or predictive-accuracy validation occurred."
+  ],
+  "runtime_tests": "NOT_RUN",
+  "full_upstream_distribution_imported": false,
+  "review_date": "2026-10-17"
+}
